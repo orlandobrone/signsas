@@ -1,0 +1,15 @@
+.sliderdata{font-size:11px;width:33.333%;display:block;text-align:center;float:left}
+.sliderdata .slider-inner{border:solid 1px rgba(0,0,0,0.1);background-color:#e2e2e2;position:relative;margin:10px}
+.sliderdata .slider-inner a{display:block;color:#fff;text-decoration:none;padding:0}
+.sliderdata .slider-inner:hover{}
+.sliderdata div.title{ background-color: #e2e2e2; background-image: url(../../images/hr.png); background-repeat: repeat-x; background-position: left top; line-height: 25px; height: 25px; }
+.sliderdata span.control{position:absolute;display:inline-block;}
+.sliderdata span.control a{display:block;}
+.sliderdata img.slimage{max-width:100%}
+.sliderdata figure{margin:10px;}
+.sliderdata div.title a{float:right;display:block}
+
+
+
+
+

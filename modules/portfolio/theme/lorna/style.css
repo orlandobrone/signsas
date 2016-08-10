@@ -1,0 +1,67 @@
+#nav-switcher{margin-bottom:30px;float:right}
+#nav-switcher a{margin-top:1px;}
+#nav-switcher a.current{background-color:#5fa3d2}
+#foliowrap li {max-width:25%;float:left}
+#foliowrap li img{display:block;max-width:100%;box-shadow:0 0 1px rgba(0,0,0,0.5);}
+#foliowrap li div.folio-inner{ margin: 5px; padding:10px;position: relative;background-color: rgba(255,255,255,0.8);box-shadow: 1px 1px 0 rgba(0,0,0,0.1)  }
+#foliowrap li div.folio-inner h4{margin-top:10px}
+#foliowrap .pcontent{display:none;position:absolute;top:0px;left:0px;width:100%;height:100%;background-color: rgba(0,0,0,0.7) }
+#foliowrap .pcontent .inner{ text-align: center;padding:20px;text-shadow:none;color:#fff}
+#foliowrap .pcontent .inner h4{margin-top:20px}
+#foliowrap .pcontent .inner span{display:inline-block;width:32px;height:32px;margin-top:15px}
+#foliowrap .pcontent .inner span a{ display: block; width: 32px; height: 32px; background-image: url(images/icons.png); background-repeat: no-repeat; }
+#foliowrap .pcontent .inner span a.show{ margin-right: 10px; background-position: 0 0; }
+#foliowrap .pcontent .inner span a.show:hover{background-position: -32px 0 }
+#foliowrap .pcontent .inner span a.goto{margin-left: 10px; background-position:0 -32px; }
+#foliowrap .pcontent .inner span a.goto:hover{background-position:-32px -32px; }
+
+#portfolio ul.infobox{margin-top:20px}
+#portfolio ul.infobox li{ padding: 5px; margin-bottom: 2px; background-color: #eee; }
+#portfolio ul.tabs{margin-top:10px}
+#portfolio ul.tabs li{height:35px}
+#portfolio .tabs a{float:left;font:bold 12px/35px Arial;height:35px;padding:0 30px;text-decoration:none;text-shadow:none;display:block}
+#portfolio .tabs a:hover{}
+#portfolio .tabs #current a{}
+#portfolio .tab-content{padding:20px;min-height:50px;box-shadow: 1px 1px 0 rgba(0,0,0,0.1)}
+
+#gallerywrap{margin-top:0}
+#gallerywrap .flexslider {position: relative; zoom: 1;overflow:hidden}
+#gallerywrap .flex-viewport {max-height: 2000px; -webkit-transition: all 1s ease; -moz-transition: all 1s ease; transition: all 1s ease;}
+#gallerywrap .loading .flex-viewport {max-height: 300px;}
+#gallerywrap .flexslider .slides {zoom: 1;}
+
+#gallerywrap .flex-direction-nav a {width: 32px; height: 32px; margin: -30px 0 0; display: block; background: url(images/navigation.png) no-repeat 0 0; position: absolute; top: 50%; cursor: pointer; text-indent: -9999px; opacity: 0; -webkit-transition: all .3s ease;}
+#gallerywrap .flex-direction-nav .flex-next {background-position: 100% 0; right: -32px; }
+#gallerywrap .flex-direction-nav .flex-prev {left: -32px;}
+#gallerywrap .flexslider:hover .flex-next {opacity: 0.8; right: 10px;}
+#gallerywrap .flexslider:hover .flex-prev {opacity: 0.8; left: 10px;}
+#gallerywrap .flexslider:hover .flex-next:hover, .flexslider:hover .flex-prev:hover {opacity: 1;}
+#gallerywrap .flex-direction-nav .disabled {opacity: .3!important; filter:alpha(opacity=30); cursor: default;}
+
+#galleryslider {margin: 0 0 10px!important;}
+#galcarousel li {margin-right: 10px;}
+#galcarousel img {display: block; opacity: .5; cursor: pointer;}
+#galcarousel img:hover {opacity: 1;}
+#galcarousel .flex-active-slide img {opacity: 1; cursor: default;}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  #foliowrap li {max-width:33.33333%;}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  #foliowrap li {max-width:33.33333%;}
+}
+@media only screen and (max-width: 767px) {
+  #foliowrap li { max-width: 100% }
+  #portfolio  .tabs li,#portfolio .tabs li a{margin:0;padding:0;float:none;display:block}
+  #portfolio  .tabs li{margin-bottom:1px}
+  #portfolio  .tabs li a{padding-left:10px}
+  #nav-switcher{margin-bottom:30px;float:none}
+  #nav-switcher a{display:block;float:none;}
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  #foliowrap li { max-width: 50%; }
+  #nav-switcher{margin-bottom:30px;float:none}
+  #nav-switcher a{margin-top:1px;display:block;float:none;}
+}

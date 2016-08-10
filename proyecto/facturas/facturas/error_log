@@ -1,0 +1,9 @@
+[28-Aug-2014 08:35:00 America/Chicago] PHP Warning:  Division by zero in /home3/signsas/public_html/proyecto/ingreso_mercancia/ingreso_mercancia/ajax_eliminar.php on line 22
+[08-Sep-2014 09:39:32 America/Chicago] PHP Warning:  Division by zero in /home3/signsas/public_html/proyecto/ingreso_mercancia/ingreso_mercancia/ajax_eliminar.php on line 22
+[11-Sep-2014 15:15:16 America/Chicago] PHP Warning:  Division by zero in /home3/signsas/public_html/proyecto/ingreso_mercancia/ingreso_mercancia/ajax_eliminar.php on line 22
+[12-Sep-2014 09:51:47 America/Chicago] PHP Warning:  Division by zero in /home3/signsas/public_html/proyecto/ingreso_mercancia/ingreso_mercancia/ajax_eliminar.php on line 22
+[12-Sep-2014 09:59:25 America/Chicago] PHP Warning:  Division by zero in /home3/signsas/public_html/proyecto/ingreso_mercancia/ingreso_mercancia/ajax_eliminar.php on line 23
+[12-Sep-2014 10:52:26 America/Chicago] PHP Warning:  Division by zero in /home3/signsas/public_html/proyecto/ingreso_mercancia/ingreso_mercancia/ajax_eliminar.php on line 16
+[12-Sep-2014 10:53:12 America/Chicago] PHP Warning:  Division by zero in /home3/signsas/public_html/proyecto/ingreso_mercancia/ingreso_mercancia/ajax_eliminar.php on line 16
+[12-Sep-2014 11:02:39 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home3/signsas/public_html/proyecto/ingreso_mercancia/ingreso_mercancia/ajax_eliminar.php on line 8
+[12-Sep-2014 19:08:31 America/Chicago] PHP Warning:  sprintf(): Too few arguments in /home3/signsas/public_html/proyecto/ingreso_mercancia/ingreso_mercancia/ajax_eliminar.php on line 36

@@ -1,0 +1,22 @@
+/* == Calendar == */
+#cal-wrap-small{position: relative;overflow: hidden;}
+#cal-wrap-small .month-small thead tr td{color:#555;font-size:12px;text-align:center;font-weight:600;vertical-align:top;padding:5px 0}
+#cal-wrap-small .month-small thead tr td a{text-decoration:none;color:#FFF;display:block}
+#cal-wrap-small .month-small thead tr td a.prev,#cal-wrap-small .month-small thead tr td a.next{background-image:url(images/prev.png);background-repeat:no-repeat;background-position:center center;height:24px;-moz-transition:all .35s ease;-o-transition:all .35s ease;-webkit-transition:all .35s ease;opacity:0.5;transition:all .35s ease}
+#cal-wrap-small .month-small thead tr td a.prev:hover,#cal-wrap-small .month-small thead tr td a.next:hover{-moz-transition:all .35s ease;-o-transition:all .35s ease;-webkit-transition:all .35s ease;opacity:1;transition:all .35s ease}
+#cal-wrap-small .month-small thead tr td a.next{background-image:url(images/next.png)}
+#cal-wrap-small .month-small thead tr td span{display:block}
+#cal-wrap-small .month-small thead tr td span.month{font-size:18px;font-family:Oswald;font-weight:200;}
+#cal-wrap-small .month-small thead th{width:14%;font-size:10px;text-transform:uppercase;text-shadow:0 1px 0 rgba(255,255,255,0.6);border-bottom:1px solid rgba(0,0,0,0.1);padding:5px 0}
+#cal-wrap-small .month-small tbody tr td{text-align:center;font-weight:700;padding:5px 0}
+#cal-wrap-small .month-small tbody tr td.today span{display:block;line-height:27px;width:27px;height:27px;margin-right:auto;margin-left:auto;border-radius:50%;background-color:rgba(0,0,0,0.1)}
+#cal-wrap-small .month-small tr td.events a{ color: #5fa3d2; display: block; line-height: 25px; width: 25px; height: 25px; margin-right: auto; margin-left: auto; border-radius: 50%; border: 2px solid rgba(164,217,239,0.6) }
+#cal-wrap-small .month-small tr td.events a:hover{border:2px solid #5fa3d2}
+#cal-wrap-small .month-small{font-size:11px;width:100%}
+
+.event-wrapper{background:rgba(255,255,255,0.1);color:#fff;line-height:1.3em;border-radius:3px;padding:10px;max-width:500px}
+.event-list h3.event-title span{font-size:12px;float:right;font-family:Arial, sans-serif}
+.event-list h6.event-venue{margin:0 0 5px;padding:0}
+.event-list div.event-desc{clear:both;font-size:12px}
+.event-list .contact-info-toggle{display:block;text-align:right;font-size:11px;text-transform:uppercase;margin-top:5px;margin-bottom:10px}
+.event-list .event-contact{text-align:right}

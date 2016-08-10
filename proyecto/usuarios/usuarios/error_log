@@ -1,0 +1,3 @@
+[21-Aug-2014 14:38:07 America/Bogota] PHP Warning:  mysql_connect(): User 'signsas_project' has exceeded the 'max_connections_per_hour' resource (current value: 1) in /home3/signsas/public_html/proyecto/conexion.php on line 10
+[24-Sep-2014 11:37:47 America/Bogota] PHP Warning:  mysql_connect(): User 'signsas_project' has exceeded the 'max_connections_per_hour' resource (current value: 1) in /home3/signsas/public_html/proyecto/conexion.php on line 10
+[24-Sep-2014 11:37:51 America/Bogota] PHP Warning:  mysql_connect(): User 'signsas_project' has exceeded the 'max_connections_per_hour' resource (current value: 1) in /home3/signsas/public_html/proyecto/conexion.php on line 10

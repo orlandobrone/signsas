@@ -1,0 +1,593 @@
+<!doctype html>
+<html>
+    <head>
+		
+	<title>jQuery jLocator Plugin - Default Preview</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<!-- font awesome -->
+		<link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet" />
+		
+		<!-- css -->
+        <link rel="stylesheet" href="../../../html/css/vendor/normalize.css" />
+		<link rel="stylesheet" href="../../../html/css/styles.min.css" />
+        <link href="../../../html/img/common/favicon.png" rel="shortcut icon" />
+		<!--[if lt IE 8]>
+		<link rel="stylesheet" href="../../../html/css/styles.ie7.css" />
+		<![endif]-->
+		
+		<link href="../../css/jlocator.min.css" rel="stylesheet" type="text/css" />		
+		
+		<!-- js -->		
+        <script src="../../../html/js/vendor/jquery-1.10.0.min.js"></script>	
+		<!--script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.2.js"></script-->
+		<script src="../../../html/js/vendor/modernizr.min.js"></script>
+		
+		
+		<!-- jplist -->
+		<script src="../../js/jplist.min.js"></script>	
+		<script src="../../js/jplist.jquery-ui-controls.min.js"></script>
+		
+		<!-- for IE 7: json support and ie 7 style -->
+		<!--[if lt IE 8]>
+		<script src="../../js/json2.min.js"></script>
+		<![endif]-->
+		
+		<!-- jlocator -->		
+		<script src="http://maps.google.com/maps/api/js?sensor=false&amp;libraries=places,geometry"></script>
+		<script src="../../js/jlocator.min.js"></script>			
+		
+			
+			<script>
+			$('document').ready(function(){
+				$('#jlocator').jlocator({
+
+                     mapTypeId: 'ROADMAP' //ROADMAP, SATELLITE, HYBRID, TERRAIN
+                });
+			});
+			</script>
+		
+		<!-- google analytics -->
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-36006444-4', 'no81no.com');
+		  ga('send', 'pageview');
+
+		</script>
+    </head>
+    <body>
+	
+		<!-- black top bar -->
+		<div class="box" id="black-top-bar">
+			<div class="center">			
+                <div class="box">
+					<ul class="hmenu right" id="social-menu">
+						<li>
+							<a href="https://www.facebook.com/miriam.zusin" title=""><i class="icon-facebook"></i></a>
+						</li>
+						<li>
+							<a href="https://plus.google.com/105939222257494574786/posts" title=""><i class="icon-google-plus"></i></a>
+						</li>						
+						<li>
+							<a href="https://github.com/no81no" title=""><i class="icon-github"></i></a>
+						</li>
+						<li>
+							<a href="http://www.linkedin.com/pub/miriam-zusin/2b/65b/933" title=""><i class="icon-linkedin"></i></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+				
+		<!-- header -->
+		<header class="box" id="header">
+			<div class="box" id="header-box">
+				<div class="center">			
+					<div class="box">
+
+						<!-- logo -->
+						<div id="logo" class="left">							
+							<a href="http://no81no.com" title="">
+								<img src="../../../html/img/common/logo.png" alt="" title="" class="align-middle" />
+							</a>
+						</div>	
+						
+						<!-- main navigation -->
+						<ul class="default-menu hmenu right" id="top-menu">						
+							<li><a title="" href="http://no81no.com"><i class="icon-reply-all"></i> All Projects</a></li>
+							<li><a title="" href="http://codecanyon.net/user/no81no/portfolio"><i class="icon-asterisk"></i> CodeCanyon</a></li>
+							<li><a title="" href="mailto:no81no@gmail.com"><i class="icon-envelope"></i> Contacts</a></li>	
+							<li><a title="" href="mailto:no81no@gmail.com" class="orange"><i class="icon-coffee"></i> Freelance</a></li>	
+						</ul>
+
+					</div>
+				</div>					
+			</div>
+		</header>
+		
+		<!-- bread crumbs-->
+		<div id="bread-crumbs-box" class="box">
+			<div id="bread-crumbs" class="box">
+			
+				<div class="center">
+					<div class="box text-shadow">
+						<p>
+							<a href="http://no81no.com" title="">All Projects</a> &raquo; jQuery jLocator Plugin
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- main content -->
+		<div id="main-content" class="box">
+			<div class="center">
+				<div id="page-content" class="box">
+
+					<!-- tabs navigation -->
+					<ul class="default-menu hmenu left box">	
+							
+						<li>
+							<a title="" href="../../../start-here.html"><i class="icon-home"></i> Overview</a>
+						</li>
+							
+						<li class="active">
+							<a title="" href="../../../html/demo.html"><i class="icon-picture"></i> Demo</a>
+						</li>
+							
+						<li>
+							<a title="" href="../../../html/usage.html"><i class="icon-wrench"></i> Usage</a>
+						</li>
+							
+						<li>
+							<a title="" href="../../../html/js-settings.html"><i class="icon-cog"></i> JS Settings</a>
+						</li>
+							
+						<li>
+							<a title="" href="../../../html/html-settings.html"><i class="icon-code"></i> HTML Settings</a>
+						</li>
+							
+						<li>
+							<a title="" href="../../../html/source-code.html"><i class="icon-list-ol"></i> Source Code</a>
+						</li>
+							
+						<li>
+							<a title="" href="../../../html/api.html"><i class="icon-book"></i> API</a>
+						</li>
+							<li>
+								<a title="" href="http://codecanyon.net/item/jquery-store-locator/3272278" class="orange"><i class="icon-shopping-cart"></i> Buy</a>
+							</li>
+					</ul>
+	
+					
+										
+					<div class="box text-shadow">
+						<h1 class="h1-30-normal left">Default Preview</h1>
+						<p class="right">
+							<a href="../../demo.html" title="" class="read-more-blue-icon title-16-underline-normal">More DEMOs</a>
+						</p>
+					</div>
+					
+					
+	
+				<div class="box example-demo">
+				
+					<!-- STORE LOCATOR DEMO -->
+					<div id="jlocator">
+					
+						<!-- panel -->
+						<div class="panel" data-type="panel">
+						
+							<!-- controls -->
+							<div class="controls" data-type="controls">
+
+								<div class="box">
+
+                                    <div class="reset-box left">
+                                       <input
+                                          type="button"
+                                          class="jplist-btn"
+                                          value="Reset"
+                                          data-control-type="reset"
+                                          data-control-name="reset"
+                                          data-control-action="reset"
+                                       />
+                                    </div>
+
+									<div 
+										class="drop-down left" 
+										data-control-type="drop-down" 
+										data-control-name="sort" 
+										data-control-action="sort"
+										data-datetime-format="{month}/{day}/{year}"> <!-- {year}, {month}, {day}, {hour}, {min}, {sec} -->
+										
+										<ul>
+											<li><span data-path="default">Sort by</span></li>
+											<li><span data-path=".title" data-order="asc" data-type="text">Title A-Z</span></li>
+											<li><span data-path=".title" data-order="desc" data-type="text">Title Z-A</span></li>
+										</ul>
+									</div>
+									
+									<input 
+										class="autocomplete left"
+										data-control-type="autocomplete" 
+										data-control-name="autocomplete" 
+										data-control-action="filter"
+										data-radius="100000" 
+										type="text"
+										placeholder="Enter a location"
+									/><!-- data-radius in meters -->
+								</div>
+								
+								<div class="box">
+								
+									<!-- checkbox filters -->
+									<div 
+										class="cb-group-filter left"
+										data-control-type="checkbox-group-filter"
+										data-control-action="filter"
+										data-control-name="themes-art">
+										
+										<div class="cb">
+											<input 			
+												data-path=".art" 									
+												id="art" 
+												type="checkbox" 									
+											/>
+											<label for="art">Art</label>
+										</div>										
+									</div>
+									
+									<!-- checkbox filters -->
+									<div 
+										class="cb-group-filter left"
+										data-control-type="checkbox-group-filter"
+										data-control-action="filter"
+										data-control-name="themes-history">
+										
+										<div class="cb">
+											<input 
+												data-path=".history"									
+												id="history" 
+												type="checkbox" />
+											<label for="history">History</label>
+										</div>									
+									</div>
+									
+									<!-- checkbox filters -->
+									<div 
+										class="cb-group-filter left"
+										data-control-type="checkbox-group-filter"
+										data-control-action="filter"
+										data-control-name="themes-science">
+										
+										<div class="cb">
+											<input 
+												data-path=".science"									
+												id="science" 
+												type="checkbox" />
+											<label for="science">Science</label>
+										</div>									
+									</div>
+								</div>
+								
+								<div class="box">
+								
+									<!-- paging -->
+									<div 
+										class="paging-results left" 
+										data-type="Page {current} of {pages}" 
+										data-control-type="label" 
+										data-control-name="paging" 
+										data-control-action="paging"></div>
+										
+									<div 
+										class="paging left" 
+										data-control-type="placeholder" 
+										data-control-name="paging" 
+										data-control-action="paging"
+										data-items-per-page="5"></div>
+									</div>
+							</div>
+							
+							<!-- store list -->
+							<div class="stores box" data-type="stores">
+								
+								<!-- store -->
+								<div 
+									data-type="store" 
+									class="store box"
+									data-latitude="39.8252813" 
+									data-longitude="-86.1857915">
+									<p class="art">
+										<span class="title" data-type="title">Indianapolis Museum of Art</span>,<br>
+										<span data-type="address">4000 Michigan Road</span>,<br>
+										<span data-type="city">Indianapolis</span>,<br>
+										<span data-type="state">Indiana</span>,<br>
+										<!--span data-type="zipcode"></span><br/-->
+										<span data-type="country">United States</span><br/>
+										<span class="tags">Tags: Art</span>
+									</p>
+								</div>
+								
+								<!-- store -->
+								<div 
+									data-type="store" 
+									class="store box"
+									data-latitude="40.7609666" 
+									data-longitude="-73.97723259999998">
+									<p class="art">
+										<span class="title" data-type="title">The Museum of Modern Art</span>,<br>
+										<span data-type="address">11 West 53 Street</span>,<br>
+										<span data-type="city">New York</span>,<br>
+										<span data-type="state">NY</span> 
+										<span data-type="zipcode">10019</span>,<br>
+										<span data-type="country">United States</span><br/>
+										<span class="tags">Tags: Art</span>
+									</p>
+								</div>
+								
+								<!-- store -->
+								<div 
+									data-type="store" 
+									class="store box"
+									data-latitude="-37.7865175" 
+									data-longitude="144.97686169999997">
+									<p class="art history">
+										<span class="title" data-type="title">Melbourne Museum</span>,<br>
+										<span data-type="address">Nicholson Street</span>, Carlton Gardens,<br>
+										<span data-type="city">Melbourne</span>,<br>
+										<span data-type="state">Victoria</span>,<br>
+										<!--span data-type="zipcode"></span>,<br/-->
+										<span data-type="country">Australia</span><br/>
+										<span class="tags">Tags: Art, History</span>
+									</p>
+								</div>
+								
+								<!-- store -->
+								<div 
+									data-type="store" 
+									class="store box"
+									data-latitude="51.5189698" 
+									data-longitude="-0.12650029999997514">
+									<p class="art history">
+										<span class="title" data-type="title">The British Museum</span>,<br>
+										<span data-type="address">Great Russell Street</span>,<br>
+										<span data-type="city">London</span>  
+										<!--span data-type="state"></span>,<br/-->
+										<span data-type="zipcode">WC1B 3DG</span>,<br>
+										<span data-type="country">United Kingdom</span>
+										<span class="tags">Tags: Art, History</span>
+									</p>
+								</div>
+								
+								<!-- store -->
+								<div 
+									data-type="store" 
+									class="store box"
+									data-latitude="51.4965633" 
+									data-longitude="-0.17689199999995253">
+									<p class="history">
+										<span class="title" data-type="title">The Natural History Museum</span>,<br>
+										<span data-type="address">Cromwell Road</span>,<br>								
+										<span data-type="city">London</span> 
+										<span data-type="zipcode">SW7 5BD</span>,<br> 
+										<!--span data-type="state"></span>,<br/-->								
+										<span data-type="country">United Kingdom</span><br/>
+										<span class="tags">Tags: History</span>
+									</p>
+								</div>
+						
+								<!-- store -->
+								<div 
+									data-longitude="2.3410350000000335" 
+									data-latitude="48.8616803" 
+									data-type="store" 
+									class="store box">
+									<p class="art">
+										<span class="title" data-type="title">Musee du Louvre</span>,<br>
+										<span data-type="address">99 Rue de Rivoli</span>,<br>	
+										<span data-type="zipcode">75004</span>  
+										<span data-type="city">Paris</span>,<br>  
+										<!--span data-type="state"></span>,<br/-->								
+										<span data-type="country">France</span><br/>
+										<span class="tags">Tags: Art</span>
+									</p>
+								</div>
+								
+								<!-- store -->
+								<div 
+									data-type="store" 
+									class="store box"
+									data-latitude="55.7416585" 
+									data-longitude="37.620750000000044">
+									<p class="art">
+										<span class="title" data-type="title">The State Tretyakov Gallery</span>,<br>
+										<span data-type="address">Lavrushinskiy pereulok, 10</span>,<br>	
+										<span data-type="zipcode">119017</span>  
+										<span data-type="city">Moscow</span>,<br>  
+										<!--span data-type="state"></span>,<br/-->								
+										<span data-type="country">Russia</span><br/>
+										<span class="tags">Tags: Art</span>
+									</p>
+								</div>
+								
+								<!-- store -->
+								<div 
+									data-type="store" 
+									class="store box"
+									data-latitude="41.914051" 
+									data-longitude="12.492039999999974">
+									<p class="art">
+										<span class="title" data-type="title">Galleria Borghese</span>,<br>
+										<span data-type="address">Piazzale del Museo Borghese, 5</span>,<br>	
+										<span data-type="zipcode">00197</span>  
+										<span data-type="city">Rome</span>,<br>  
+										<!--span data-type="state"></span>,<br/-->								
+										<span data-type="country">Italy</span><br/>
+										<span class="tags">Tags: Art</span>
+									</p>
+								</div>
+								
+								<!-- store -->
+								<div 
+									data-type="store" 
+									class="store box"
+									data-latitude="45.44152769999999" 
+									data-longitude="12.327727699999969">
+									<p class="history">
+										<span class="title" data-type="title">Museo di Storia Naturale di Venezia</span>,<br>
+										<span data-type="address">Sestiere Santa Croce, 1730</span>,<br>	
+										<span data-type="zipcode">30135</span>  
+										<span data-type="city">Venice</span>,<br>  
+										<!--span data-type="state"></span>,<br/-->								
+										<span data-type="country">Italy</span><br/>
+										<span class="tags">Tags: History</span>
+									</p>
+								</div>
+								
+								<!-- store -->
+								<div 
+									data-type="store" 
+									class="store box"
+									data-latitude="37.7986528" 
+									data-longitude="-122.26426950000001">
+									<p class="art history">
+										<span class="title" data-type="title">Oakland Museum of California</span>,<br>
+										<span data-type="address">1000 Oak Street</span>,<br>	
+										<span data-type="city">Oakland</span>,<br>								
+										<span data-type="state">CA</span> 	
+										<span data-type="zipcode">94607</span>,<br/>  								
+										<span data-type="country">United States</span>
+										<span class="tags">Tags: Art, History</span>
+									</p>
+								</div>
+								
+								<!-- store -->
+								<div 
+									data-type="store" 
+									class="store box"
+									data-latitude="37.414341" 
+									data-longitude="-122.07692159999999">
+									<p class="science">
+										<span class="title" data-type="title">Computer History Museum</span>,<br>
+										<span data-type="address">1401 North Shoreline Boulevard</span>,<br>	
+										<span data-type="city">Mountain View</span>,<br>								
+										<span data-type="state">CA</span> 	
+										<span data-type="zipcode">94043</span>,<br/>  								
+										<span data-type="country">United States</span><br/>
+										<span class="tags">Tags: Science</span>
+									</p>
+								</div>
+								
+								<!-- store -->
+								<div 
+									data-type="store" 
+									class="store box"
+									data-latitude="40.782568" 
+									data-longitude="-73.96547199999998">
+									<p class="art">
+										<span class="title" data-type="title">Metropolitan Museum of Art</span>,<br>
+										<span data-type="address">1000 5th Ave</span>,<br>	
+										<span data-type="city">New York</span>,<br>								
+										<span data-type="state">NY</span> 	
+										<span data-type="zipcode">10028</span>,<br/>  								
+										<span data-type="country">United States</span><br/>
+										<span class="tags">Tags: Art</span>
+									</p>
+								</div>
+								
+								<!-- store -->
+								<div 
+									data-type="store" 
+									class="store box"
+									data-latitude="38.6396114" 
+									data-longitude="-90.29397840000001">
+									<p class="art">
+										<span class="title" data-type="title">Saint Louis Art Museum</span>,<br>
+										<span data-type="address">1 Fine Arts Drive</span>,<br>	
+										<span data-type="city">St. Louis</span>,<br>								
+										<span data-type="state">MO</span> 	
+										<span data-type="zipcode">63110</span>,<br/>  								
+										<span data-type="country">United States</span><br/>
+										<span class="tags">Tags: Art</span>
+									</p>
+								</div>
+								
+								<!-- store -->
+								<div 
+									data-type="store" 
+									class="store box"
+									data-latitude="37.331629" 
+									data-longitude="-121.89012639999999">
+									<p class="science">
+										<span class="title" data-type="title">The Tech Museum of Innovation</span>,<br>
+										<span data-type="address">201 South Market Street</span>,<br>	
+										<span data-type="city">San Jose</span>,<br>								
+										<span data-type="state">CA</span> 	
+										<span data-type="zipcode">95113</span>,<br/>  								
+										<span data-type="country">United States</span><br/>
+										<span class="tags">Tags: Science</span>
+									</p>
+								</div>
+								
+								<!-- store -->
+								<div 
+									data-type="store" 
+									class="store box"
+									data-latitude="40.4144049" 
+									data-longitude="-3.694179800000029">
+									<p class="art history">
+										<span class="title" data-type="title">Museo del Prado</span>,<br>
+										<span data-type="address">Paseo del Prado</span>,<br>	
+										<span data-type="zipcode">28014</span> 
+										<span data-type="city">Madrid</span>,<br>								
+										<!--span data-type="state">CA</span-->															
+										<span data-type="country">Spain</span><br/>
+										<span class="tags">Tags: Art, History</span>
+									</p>
+								</div>
+							</div>
+							
+							<!-- no results -->
+							<div class="box no-results" data-type="no-results">
+								<p>No results found</p>
+							</div>
+							
+						</div>
+						
+						<!-- map -->
+						<div class="map" data-type="map"></div>
+						
+					</div>
+					<!-- end of STORE LOCATOR DEMO -->
+			
+				</div>
+				
+				<!-- title -->	
+				<div class="box text-shadow">	
+					<p class="note"><b>Note:</b> the file should be opened in http://localhost or on another server. In most browsers ajax doesn"t work locally.</p>
+				</div>
+				</div>
+			</div>
+		</div>	
+		
+		<!-- footer -->
+		<footer class="box" id="footer">
+			<div class="center">			
+                <div class="box">
+				
+					<p class="align-center" id="footer-content">
+						Copyright &copy;  2013 <a href="mailto:no81no@gmail.com" title="">Miriam Zusin.</a>
+					</p>
+					
+				</div>
+			</div>
+		</footer>	
+    </body>
+</html>

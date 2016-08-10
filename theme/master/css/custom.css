@@ -1,0 +1,40 @@
+@import url("base.css");
+/*@import url("fonts.css");*/
+@import url("http://fonts.googleapis.com/css?family=Droid+Sans:400,700");
+@import url("http://fonts.googleapis.com/css?family=Oswald:400,700");
+html,body{height:100%;margin:0;padding:0}
+body{color:#666;-webkit-text-size-adjust:100%;font-family:Droid Sans, Arial, Helvetica, sans-serif;font-size:13px;font-style:normal;line-height:20px;font-weight:400;font-variant:normal}
+a{color:#CC413E;text-decoration:none;-webkit-transition:all .35s ease;-moz-transition:all .35s ease;-o-transition:all .35s ease;transition:all .35s ease;outline:none}
+a:hover,a:focus{color:rgba(0,0,0,1);-webkit-transition:all .55s ease;-moz-transition:all .55s ease;-o-transition:all .35s ease;transition:all .55s ease;outline:none}
+hr,.hr2{border:0;height:3px;margin-top:10px;margin-bottom:15px;background:none repeat scroll 0 0 #F7F7F7;box-shadow:0 1px 2px #DDD inset}
+.hr2{margin-top:30px;margin-bottom:30px}
+
+.box{padding:20px;border:1px solid rgba(0,0,0,0.1);background-color: rgba(0,0,0,0.03);box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.04) inset;}
+.box-alt{padding:8px;border:1px solid #CDCDCD;background-attachment:scroll;background-image:url(../images/image-bg.png);background-repeat:repeat-x;background-position:0 0;box-shadow:0 1px 0 0 #FFFFFF;}
+
+.colred{color:#BA433F}
+.colblue{color:#3F95AE}
+.colyellow{color:#D38E2C}
+.colgreen{color:#4D9B4D}
+
+/* == Lists, Progress Bars, Labels== */
+ul.bullets li,ul.check li,ul.star li{background-image: url(../images/bullet.png); background-repeat: no-repeat; background-position: left center; padding-left:20px; }
+ul.check li{background-image: url(../images/check.png)}
+ul.star li{background-image: url(../images/star.png)}
+ol.numbers li{margin-left:15px}
+
+.label{border-radius:3px 3px 3px 3px;padding:1px 4px 2px}
+.label,.badge{background-color:#999;color:#FFF;font-size:12px;font-weight:700;line-height:14px;vertical-align:baseline;white-space:nowrap}
+.label-ok,.badge-ok{background-color:#4D9B4D}
+.label-info,.badge-info{background-color:#3F95AE}
+.label-alert,.badge-alert{background-color:#D38E2C}
+.label-error,.badge-error{background-color:#BA433F}
+
+/* == Headers == */
+h1,h2,h3,h4,h5,h6{color:#222;font-family:Oswald, Arial, Helvetica, sans-serif;font-weight:400;margin:0 0 10px;padding:0;}
+h1{font-size:18px;line-height:18px}
+h2{font-size:16px;line-height:16px}
+h3{font-size:16px;line-height:16px;}
+h4{font-size:14px;line-height:14px;text-transform: uppercase; }
+h5{font-size:13px;line-height:13px}
+h6{font-size:12px;line-height:12px}

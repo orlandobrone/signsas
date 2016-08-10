@@ -1,0 +1,27 @@
+.visual-form ul{margin:0;padding:0}
+.visual-form ul li{display:block;list-style-type:none;padding:20px;margin-bottom:3px;background-color: rgba(255,255,255,0.8);box-shadow: 1px 1px 0 rgba(0,0,0,0.1)}
+.visual-form ul li span.title-label,
+.visual-form ul li.input_text label,
+.visual-form ul li.datepicker label,
+.visual-form ul li.uploader label,
+.visual-form ul li.selectbox label,
+.visual-form ul li.textarea label{display:block;font-family:Oswald, Arial, serif;font-size:18px;font-weight:200;padding-bottom:5px;margin-bottom:5px;}
+.visual-form ul li span.multi-row{display:block;padding-left:5px}
+.visual-form ul li span.rowspan{display:block;padding-top:2px;padding-bottom:2px}
+.visual-form ul li span.rowspan label{padding-left:8px}
+.visual-form ul li.input_text input,
+.visual-form ul li.datepicker input,
+.visual-form ul li.selectbox select,
+.visual-form ul li.textarea textarea{}
+.visual-form ul li.textarea textarea{overflow:auto}
+.visual-form ul li.datepicker input{ background-image: url(images/calendar.png); background-repeat: no-repeat; background-position: 98% center; }
+.visual-form ul li.required span.title-label,
+.visual-form ul li.input_text.required label,
+.visual-form ul li.datepicker.required label,
+.visual-form ul li.uploader.required label,
+.visual-form ul li.textarea.required label,
+.visual-form ul li.selectbox.required label{background-image:url(images/required.png);background-repeat:no-repeat;background-position:left 7px;padding-left:15px}
+p.req{text-align:right;margin-bottom:10px}
+p.req span{display:inline-block}
+.ui-datepicker select{padding:0px;box-shadow:none;border-radius:3px}
+#fullform h2{margin-top:20px}

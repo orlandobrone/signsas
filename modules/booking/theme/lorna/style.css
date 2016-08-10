@@ -1,0 +1,97 @@
+/* == Calendar == */
+#booking{position:relative}
+#booking .header{background:#eee;box-shadow:inset 0 1px 0 rgba(0,0,0,0.1);height:40px;line-height:40px}
+#booking .header > div{font-size:18px;letter-spacing:1px;font-family:Oswald;text-align:center}
+#booking .body{position:relative;background:rgba(255,255,255,0.1)}
+#booking .section{box-shadow:inset 0 -1px 0 rgba(0,0,0,0.1)}
+#booking .section:last-child{box-shadow:none;border-bottom:none}
+#booking .section > div:first-child{box-shadow:none}
+#booking .section > div,#booking .header > div{float:left;width:14.28%}
+#booking .section > div{height:100px;box-shadow:-1px 0 0 rgba(0,0,0,0.1)}
+#booking .section > div > span.date{display:block;text-shadow:none;font-size:26px;text-align:left;padding:10px}
+#booking .section > div > div{padding:0}
+#booking .section > div > span.weekday{padding-left:5px;display:none}
+#booking .section > div.today{background:rgba(0,0,0,0.1)}
+#booking .section > div:last-child,#booking .header > div:last-child{border-right:none}
+#booking .section > div > div a,#booking .section > div > div span{color:rgba(255,255,255,0.7);font-size:10px;text-transform:uppercase;display:inline-block;border-radius:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%;margin-bottom:1px;background:rgba(0,0,0,0.3);padding:0 5px;text-shadow:none}
+#booking .section > div > div a:hover,#booking .section > div > div span:hover{opacity:0.7}
+#booking .nav{height:50px;position:relative;padding:20px 20px 10px 30px}
+#booking .nav h3{float:right;font-weight:300;text-transform:uppercase;letter-spacing:4px;line-height:30px;margin-right:100px}
+#booking .nav h3 span.month{margin-right:10px}
+#booking .nav nav{position:absolute;right:0}
+#booking .nav nav a{float:left;width:30px;height:30px;position:relative;border-radius:0 3px 3px 0;box-shadow:inset 0 1px rgba(255,255,255,0.2);background-color:#ddd;margin:0 1px}
+#booking .nav nav a.prev{border-radius:3px 0 0 3px;background-image:url(images/nav.png);background-repeat:no-repeat;background-position:0 -30px}
+#booking .nav nav a.next{background-image:url(images/nav.png);background-repeat:no-repeat;background-position:0 0}
+#booking .nav nav a.next:hover{background-position:-30px 0}
+#booking .nav nav a.prev:hover{background-position:-30px -30px}
+
+/* == Weekly View == */
+#navweek{position:relative;padding-right:0;padding-left:0;margin-top:15px}
+#navweek h3{float:left}
+#navweek nav{float:right}
+#navweek nav a.prev{margin-right:10px}
+.datatable{border-radius:0;box-shadow:none;background-image:none;box-shadow: 1px 1px 0 rgba(0,0,0,0.1)}
+.datatable thead tr th{text-align:center;border-bottom:none;background-color:inherit;font-variant:normal;font-size:16px;font-weight:200;padding:0}
+#weekly{width:100%}
+#weekly thead tr th{box-shadow:inset 0 1px 0 rgba(255,255,255,0.1);height:40px;line-height:40px;font-family:Oswald;font-size:18px;font-weight:400;background-color:#eee;background-image:none;text-align:center!important}
+#weekly tr td div.dates{text-align:center;border-bottom:1px solid rgba(0,0,0,0.1);margin-bottom:5px;padding:5px}
+#weekly tr td{width:14%}
+
+/* == List View == */
+#list-view .event-wrap{background-color: rgba(255,255,255,0.8);box-shadow: 1px 1px 0 rgba(0,0,0,0.1);;margin-bottom:2px;padding:5px}
+#list-view h4 span{font-size:14px}
+#list-view .date-box{float:left;width:80px;background:#eee;box-shadow: 1px 1px 0 rgba(0,0,0,0.1);text-align:center}
+#list-view .date-box span{display:block}
+#list-view .date-box span.month{background:#ddd;line-height:20px;height:20px}
+#list-view .date-box span.day{font-size:30px;line-height:40px;height:40px}
+#list-view .date-box span.week{line-height:20px;height:20px;}
+#list-view .content-box{margin-left:100px}
+#list-view .info-box{margin-top:3px;border-top:3px double rgba(0,0,0,0.1);padding:5px 0}
+#list-view .info-box > span{margin-right:10px;display:inline-block;background:#eee;margin-top:2px;padding:1px 5px}
+
+/* == Layout Switch == */
+#layout-switch,#myevents{height:35px;line-height:35px;border:1px solid rgba(255,255,255,0.5);margin-top:2px;margin-bottom:2px;background:#ddd;float:right}
+#layout-switch a,#myevents a{width:35px;height:35px;display:block;float:left;text-indent:-9999px}
+#myevents a{background-image:url(images/user.png);background-repeat:no-repeat;background-position:0 0}
+#layout-switch a.list-icon,#layout-switch a.grid-icon,#layout-switch a.week-icon{background-image:url(images/layout-bg.png);background-repeat:no-repeat;background-position:0 0}
+#layout-switch a.list-icon:hover,#layout-switch a.grid-icon:hover,#layout-switch a.week-icon:hover,#myevents a:hover{background-color:#5fa3d2}
+#layout-switch a.grid-icon{background-position:right 0}
+#layout-switch a.week-icon{background-position:-35px 0}
+#layout-switch a.grid-icon.current{background-position:right -35px}
+#layout-switch a.list-icon.current{background-position:0 -35px}
+#layout-switch a.week-icon.current{background-position:-35px -35px}
+
+#booking ul.toolbar{margin:0;padding:0}
+#booking ul.toolbar li{border-bottom:1px solid rgba(0,0,0,0.1);padding-top:5px;padding-bottom:5px}
+#booking .desc{margin-top:15px;}
+#map{height:300px;background:rgba(255,255,255,1);min-height: 0px}
+
+#booking div.bookable,#booking div.toolate,#booking div.regged,#booking div.toosoon,#booking div.maxcapacity,#booking div.nonbookable{color:#fff;box-shadow:inset 0 1px 0 rgba(0,0,0,0.1);padding-right:5px;padding-left:30px;background-color:#aaa;background-image:url(images/notices.png);background-repeat:no-repeat;background-position:0 0;line-height:30px;height:30px;text-shadow:none}
+#booking div.toolate,#booking div.toosoon{background-color:rgba(190,95,125,0.8);background-position:0 -30px}
+#booking div.regged{background-color:rgba(77,155,77,0.8);background-position:0 -60px}
+#booking div.maxcapacity{background-color:rgba(210,140,40,0.8);background-position:0 -90px}
+#booking div.nonbookable{background-color:rgba(65,150,175,0.8);background-position:0 -120px}
+#booking div.bookable a{color:#fff}
+
+/* == User Section == */
+#booking article{background-color: rgba(255,255,255,0.8);box-shadow: 1px 1px 0 rgba(0,0,0,0.1);margin-top:20px;;position:relative;padding:10px}
+#booking article figure{line-height:0}
+#booking article h4{margin-top:10px}
+#booking h4 span{font-size:14px}
+
+@media screen and (max-width: 880px) , screen and (max-height: 450px) {
+  #booking .nav{padding:0}
+  #booking .nav nav{top:0}
+  #booking .nav nav
+  #booking-container,#booking,#booking .header,#booking .section > div > span.date{position:relative;top:auto;left:auto;bottom:auto;right:auto;height:auto;width:auto}
+  #booking .nav h3{float:none;width:auto;text-align:left;margin:0}
+  #booking .section,.ie9 #booking .section > div,#booking .section > div{height:auto;width:100%;border:none}
+  #booking .section > div{float:none;min-height:50px;box-shadow:inset 0 -1px rgba(0,0,0,0.1)!important;border-radius:0!important}
+  #booking .section > div.empty{min-height:0;height:0;box-shadow:none!important;padding:0}
+  #booking .section{box-shadow:none}
+  #booking .section > div > div{margin-top:0;padding-left:0;margin-left:20px;max-width:70%;display:inline-block}
+  #booking .section > div.today{background:rgba(255,255,255,1)}
+  #booking .section > div > span.date{width:30px;display:inline-block;text-align:right}
+  #booking .section > div > span.weekday{display:inline-block;width:40px;font-size:10px;text-transform:uppercase}
+  #booking .header,#booking .section > div.today:after{display:none}
+}

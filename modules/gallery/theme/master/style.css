@@ -1,0 +1,24 @@
+#gallerywrap{margin-top:30px}
+#gallerywrap li{list-style-type:none;max-width:25%;float:left;position:relative;margin:0;padding:0}
+#gallerywrap li img{display:block;max-width:100%; border-bottom: 1px solid #CDCDCD;box-shadow: 0 1px 0 0 #FFFFFF;}
+#gallerywrap li div.gallery-inner{margin:5px}
+#gallerywrap li div.gallery-inner:after{display:block;content:"";line-height:0;height:15px;background:url(images/shadow.png);background-repeat:no-repeat;background-position:0 0}
+#gallerywrap li:hover{background-color:#fff}
+#gallerywrap .gallery-data{border:1px solid #E6E6E6;background-attachment:scroll;background-color:#F6F6F6;background-image:none;background-repeat:repeat;background-position:0 0;padding:10px}
+#gallerywrap .gallery-data h4{margin-bottom:5px;text-transform:none}
+#gallerywrap .gallery-data p{font-size:12px}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+#gallerywrap li {max-width:25%;}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+#gallerywrap li { max-width: 33.3% }
+}
+@media only screen and (max-width: 767px) {
+#gallerywrap li { max-width: 100% }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+#gallerywrap li { max-width: 50%; }
+}

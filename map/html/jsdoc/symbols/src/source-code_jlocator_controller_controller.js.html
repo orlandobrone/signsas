@@ -1,0 +1,57 @@
+<html><head><meta http-equiv="content-type" content="text/html; charset=utf-8"> <style>
+	.KEYW {color: #933;}
+	.COMM {color: #bbb; font-style: italic;}
+	.NUMB {color: #393;}
+	.STRN {color: #393;}
+	.REGX {color: #339;}
+	.line {border-right: 1px dotted #666; color: #666; font-style: normal;}
+	</style></head><body><pre><span class='line'>  1</span> <span class="PUNC">(</span><span class="KEYW">function</span><span class="PUNC">(</span><span class="NAME">$</span><span class="PUNC">)</span><span class="PUNC">{</span><span class="WHIT">
+<span class='line'>  2</span> </span><span class="WHIT">	</span><span class="STRN">'use strict'</span><span class="PUNC">;</span><span class="WHIT">		
+<span class='line'>  3</span> 		
+<span class='line'>  4</span> 	</span><span class="COMM">/**
+<span class='line'>  5</span> 	* controller constructor
+<span class='line'>  6</span> 	* @param {jQueryObject} $root - jlocator root element
+<span class='line'>  7</span> 	* @param {Object} options - jlocator user options
+<span class='line'>  8</span> 	* @return {Object} - controller + this	
+<span class='line'>  9</span> 	* @constructor 
+<span class='line'> 10</span> 	*/</span><span class="WHIT">
+<span class='line'> 11</span> </span><span class="WHIT">	</span><span class="KEYW">var</span><span class="WHIT"> </span><span class="NAME">Init</span><span class="WHIT"> </span><span class="PUNC">=</span><span class="WHIT"> </span><span class="KEYW">function</span><span class="PUNC">(</span><span class="NAME">$root</span><span class="PUNC">,</span><span class="WHIT"> </span><span class="NAME">options</span><span class="PUNC">)</span><span class="PUNC">{</span><span class="WHIT">
+<span class='line'> 12</span> </span><span class="WHIT">	
+<span class='line'> 13</span> 		</span><span class="KEYW">var</span><span class="WHIT"> </span><span class="NAME">self</span><span class="WHIT"> </span><span class="PUNC">=</span><span class="WHIT"> </span><span class="PUNC">{</span><span class="WHIT">
+<span class='line'> 14</span> </span><span class="WHIT">			</span><span class="NAME">$root</span><span class="PUNC">:</span><span class="WHIT"> </span><span class="NAME">$root</span><span class="WHIT">
+<span class='line'> 15</span> </span><span class="WHIT">			</span><span class="PUNC">,</span><span class="NAME">options</span><span class="PUNC">:</span><span class="WHIT"> </span><span class="NAME">options</span><span class="WHIT">
+<span class='line'> 16</span> </span><span class="WHIT">			
+<span class='line'> 17</span> 			</span><span class="COMM">//objects</span><span class="WHIT">
+<span class='line'> 18</span> </span><span class="WHIT">			</span><span class="PUNC">,</span><span class="NAME">panel</span><span class="PUNC">:</span><span class="WHIT"> </span><span class="KEYW">null</span><span class="WHIT">
+<span class='line'> 19</span> </span><span class="WHIT">			</span><span class="PUNC">,</span><span class="NAME">map</span><span class="PUNC">:</span><span class="WHIT"> </span><span class="KEYW">null</span><span class="WHIT">
+<span class='line'> 20</span> </span><span class="WHIT">		</span><span class="PUNC">}</span><span class="PUNC">;</span><span class="WHIT">
+<span class='line'> 21</span> </span><span class="WHIT">		
+<span class='line'> 22</span> 		</span><span class="COMM">//init objects</span><span class="WHIT">
+<span class='line'> 23</span> </span><span class="WHIT">		</span><span class="NAME">self.panel</span><span class="WHIT"> </span><span class="PUNC">=</span><span class="WHIT"> </span><span class="KEYW">new</span><span class="WHIT"> </span><span class="NAME">jQuery.fn.jlocator.panel</span><span class="PUNC">(</span><span class="NAME">self.$root</span><span class="PUNC">,</span><span class="WHIT"> </span><span class="NAME">self.options</span><span class="PUNC">)</span><span class="PUNC">;</span><span class="WHIT">
+<span class='line'> 24</span> </span><span class="WHIT">		</span><span class="NAME">self.map</span><span class="WHIT"> </span><span class="PUNC">=</span><span class="WHIT"> </span><span class="KEYW">new</span><span class="WHIT"> </span><span class="NAME">jQuery.fn.jlocator.map</span><span class="PUNC">(</span><span class="NAME">self.$root</span><span class="PUNC">,</span><span class="WHIT"> </span><span class="NAME">self.options</span><span class="PUNC">)</span><span class="PUNC">;</span><span class="WHIT">
+<span class='line'> 25</span> </span><span class="WHIT">				
+<span class='line'> 26</span> 		</span><span class="KEYW">return</span><span class="WHIT"> </span><span class="NAME">$.extend</span><span class="PUNC">(</span><span class="KEYW">this</span><span class="PUNC">,</span><span class="WHIT"> </span><span class="NAME">self</span><span class="PUNC">)</span><span class="PUNC">;</span><span class="WHIT">
+<span class='line'> 27</span> </span><span class="WHIT">	</span><span class="PUNC">}</span><span class="PUNC">;</span><span class="WHIT">
+<span class='line'> 28</span> </span><span class="WHIT">	
+<span class='line'> 29</span> 	</span><span class="COMM">/**
+<span class='line'> 30</span> 	* controller constructor
+<span class='line'> 31</span> 	* @param {jQueryObject} $root - jlocator root element
+<span class='line'> 32</span> 	* @param {Object} options - jlocator user options
+<span class='line'> 33</span> 	* @return {Object} - controller
+<span class='line'> 34</span> 	* @constructor 
+<span class='line'> 35</span> 	* @name controller
+<span class='line'> 36</span>     * @class Controller
+<span class='line'> 37</span>     * @memberOf jQuery.fn.jlocator
+<span class='line'> 38</span> 	* @property {jQueryObject} $root - jlocator root element
+<span class='line'> 39</span> 	* @property {Object} options - jlocator user options
+<span class='line'> 40</span> 	* @property {jQuery.fn.jlocator.panel} panel - jlocator panel
+<span class='line'> 41</span> 	* @property {jQuery.fn.jlocator.map} map - jlocator map
+<span class='line'> 42</span> 	*/</span><span class="WHIT">
+<span class='line'> 43</span> </span><span class="WHIT">	</span><span class="NAME">jQuery.fn.jlocator.controller</span><span class="WHIT"> </span><span class="PUNC">=</span><span class="WHIT"> </span><span class="KEYW">function</span><span class="PUNC">(</span><span class="NAME">$root</span><span class="PUNC">,</span><span class="WHIT"> </span><span class="NAME">options</span><span class="PUNC">)</span><span class="PUNC">{</span><span class="WHIT">
+<span class='line'> 44</span> </span><span class="WHIT">				
+<span class='line'> 45</span> 		</span><span class="COMM">//call constructor</span><span class="WHIT">
+<span class='line'> 46</span> </span><span class="WHIT">		</span><span class="KEYW">return</span><span class="WHIT"> </span><span class="KEYW">new</span><span class="WHIT"> </span><span class="NAME">Init</span><span class="PUNC">(</span><span class="NAME">$root</span><span class="PUNC">,</span><span class="WHIT"> </span><span class="NAME">options</span><span class="PUNC">)</span><span class="PUNC">;</span><span class="WHIT">	
+<span class='line'> 47</span> 	</span><span class="PUNC">}</span><span class="PUNC">;</span><span class="WHIT">
+<span class='line'> 48</span> </span><span class="PUNC">}</span><span class="PUNC">)</span><span class="PUNC">(</span><span class="NAME">jQuery</span><span class="PUNC">)</span><span class="PUNC">;</span><span class="WHIT">
+<span class='line'> 49</span> 
+<span class='line'> 50</span> </span></pre></body></html>

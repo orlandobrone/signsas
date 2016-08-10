@@ -1,0 +1,198 @@
+<!doctype html>
+<html>
+    <head>
+		
+	<title>jQuery jPList Plugin - Controls</title>
+		<meta charset="utf-8" />
+		<!--meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /-->
+		
+		<!-- css -->
+		<link rel="stylesheet" href="../html/css/styles.css" />
+        <link href="../html/img/common/favicon.png" rel="shortcut icon" />
+		<!--[if lt IE 8]>
+		<link rel="stylesheet" href="../html/css/styles.ie7.css" />
+		<![endif]-->
+				
+		
+		<!-- js -->		
+        <script src="../html/js/vendor/jquery-1.10.0.min.js"></script>	
+		<!--script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.2.js"></script-->
+		<script src="../html/js/vendor/modernizr.min.js"></script>
+		
+    </head>
+    <body>
+	
+		<!-- black top bar -->
+		<div class="box" id="black-top-bar">
+			<div class="center">			
+                <div class="box"></div>
+			</div>
+		</div>
+				
+		<!-- header -->
+		<header class="box" id="header">
+			<div class="box" id="header-box">
+				<div class="center">			
+					<div class="box">
+
+						<!-- logo -->
+						<div id="logo" class="left">							
+							<a href="http://no81no.com" title="">
+								<img src="../html/img/common/logo.png" alt="" title="" class="align-middle" />
+							</a>
+						</div>	
+						
+						<!-- main navigation -->
+						<ul class="default-menu hmenu right" id="top-menu">						
+							<li><a title="" href="http://no81no.com">All Projects</a></li>
+							<li><a title="" href="http://codecanyon.net/user/no81no/portfolio">CodeCanyon</a></li>
+							<li><a title="" href="mailto:no81no@gmail.com">Contacts</a></li>	
+							<li><a title="" href="mailto:no81no@gmail.com" class="orange">Freelance</a></li>							
+						</ul>
+
+					</div>
+				</div>					
+			</div>
+		</header>
+		
+		<!-- bread crumbs-->
+		<div id="bread-crumbs-box" class="box">
+			<div id="bread-crumbs" class="box">
+			
+				<div class="center">
+					<div class="box text-shadow">
+						<p>
+							<a href="http://no81no.com" title="">All Projects</a> &raquo; jQuery jPList Plugin
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- main content -->
+		<div id="main-content" class="box">
+			<div class="center">
+				<div id="page-content" class="box">
+
+					<!-- tabs navigation -->
+					<ul class="default-menu hmenu left box">	
+							
+						<li>
+							<a title="" href="../start-here.html">Overview</a>
+						</li>
+							
+						<li>
+							<a title="" href="../html/demo.html">Demo</a>
+						</li>
+							
+						<li>
+							<a title="" href="../html/usage.html">Usage</a>
+						</li>
+							
+						<li>
+							<a title="" href="../html/js-settings.html">JS Settings</a>
+						</li>
+							
+						<li>
+							<a title="" href="../html/source-code.html">Source Code</a>
+						</li>
+							
+						<li>
+							<a title="" href="../html/api.html">API</a>
+						</li>
+					</ul>
+	
+					
+							
+										
+					<div class="box text-shadow">
+						<h1 class="h1-30-normal left">jPList Controls</h1>
+					</div>
+					
+					<div class="box text-shadow">
+						<ul class="arrows-menu">
+							<li><a href="controls/sort-dropdown.html" title="">Sort dropdown control (UL/LI)</a></li>
+							<li><a href="controls/sort-dropdown-select.html" title="">Sort dropdown control (Select)</a></li>
+							<li style="margin-bottom: 10px;"><a href="controls/default-sort.html" title="">Default sort control</a></li>
+							
+							<li><a href="controls/items-per-page-dropdown.html" title="">Items per page dropdown control (UL/LI)</a></li>
+							<li><a href="controls/items-per-page-dropdown-select.html" title="">Items per page dropdown control (Select)</a></li>
+							<li><a href="controls/placeholder.html" title="">Pagination control (placeholder)</a></li>
+							<li style="margin-bottom: 10px;"><a href="controls/label.html" title="">Pagination results control (label)</a></li>
+							
+							<li><a href="controls/filter-dropdown.html" title="">Filter dropdown control (UL/LI)</a></li>
+							<li><a href="controls/filter-dropdown.html" title="">Filter dropdown control (Select)</a></li>
+							<li style="margin-bottom: 10px;"><a href="controls/text-filter.html" title="">Text filter control</a></li>
+							
+							<li><a href="controls/reset-button.html" title="">Reset button control</a></li>
+							<li style="margin-bottom: 10px;"><a href="controls/list-grid-view.html" title="">List/Grid view control</a></li>
+							
+							<li><a href="controls/cb-group-filters.html" title="">Checkbox group filter control</a></li>
+							<li><a href="controls/checkbox-filters-or-logic.html" title="">Checkbox filter OR logic (deprecated)</a></li>
+							<li><a href="controls/checkbox-filters-and-logic.html" title="">Checkbox filter AND logic (deprecated)</a></li>							
+							<li><a href="controls/radio-buttons-filter.html" title="">Radio buttons filter control</a></li>
+							<li style="margin-bottom: 10px;"><a href="controls/button-filters.html" title="">Button filters control</a></li>
+							
+							<li><a href="controls/date-picker-range-filter.html" title="">Date picker range filter control (jQuery UI)</a></li>
+							<li><a href="controls/range-slider.html" title="">Range slider control (jQuery UI)</a></li>
+						</ul>
+					</div>
+					
+					<div class="box text-shadow" style="margin-top: 50px;">
+						<h1 class="h1-30-normal left">Panel Controls Attributes</h1>
+					</div>
+					
+					<div class="box text-shadow">
+						
+						<!-- settings -->
+						<table class="settings-tbl">
+						
+							<thead>
+								<tr>
+									<th>Data Attribute</th>
+									<th>Description</th>
+								</tr>
+							</thead>
+							
+							<tbody>
+								<tr>
+									<td class="desc">data-control-type="type"</td>
+									<td class="desc">panel control type like 'drop-down', 'textbox', 'placeholder', 'label'</td>
+								</tr>
+								
+								<tr>
+									<td class="desc">data-control-name="name"</td>
+									<td class="desc">panel control name. It should be the same in the top and bottom panels.</td>
+								</tr>
+								
+								<tr>
+									<td class="desc">data-control-action="action"</td>
+									<td class="desc">panel control action like 'sort', 'filter', 'paging'.</td>
+								</tr>
+								
+								<tr>
+									<td class="desc">data-control-cookies="false"</td>
+									<td class="desc">exclude control from cookies (when cookies option is enabled)</td>
+								</tr>
+							</tbody>	
+							
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>	
+		
+		<!-- footer -->
+		<footer class="box" id="footer">
+			<div class="center">			
+                <div class="box">
+				
+					<p class="align-center" id="footer-content">
+						Copyright &copy;  2013 <a href="mailto:no81no@gmail.com" title="">Miriam Zusin.</a>
+					</p>
+					
+				</div>
+			</div>
+		</footer>	
+    </body>
+</html>

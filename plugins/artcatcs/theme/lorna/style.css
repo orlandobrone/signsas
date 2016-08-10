@@ -1,0 +1,5 @@
+#art-categories ul{margin:0;padding:0}
+#art-categories ul li{background-image:none;list-style-type:none;display:block;margin:0;padding:0}
+#art-categories ul li a{display:block;background-image:url(images/bullet.png);background-repeat:no-repeat;background-position:left center;padding-left:15px}
+#art-categories ul li a small{float:right;color:#888;font-weight:200}
+#art-categories ul li ul li,#art-categories ul li ul li{padding-left:10px}

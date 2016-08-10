@@ -1,0 +1,41 @@
+[12-Jun-2014 13:44:32 UTC] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/signsas/public_html/proyecto/asignacion/vehiculos/ajax_data.php on line 185
+[12-Jun-2014 13:44:32 UTC] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/signsas/public_html/proyecto/asignacion/vehiculos/ajax_data.php on line 185
+[12-Jun-2014 13:44:33 UTC] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/signsas/public_html/proyecto/asignacion/vehiculos/ajax_data.php on line 185
+[12-Jun-2014 13:44:39 UTC] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/signsas/public_html/proyecto/asignacion/vehiculos/ajax_data.php on line 185
+[12-Jun-2014 13:44:47 UTC] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/signsas/public_html/proyecto/asignacion/vehiculos/ajax_form_modificar.php on line 152
+[12-Jun-2014 13:48:40 UTC] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/signsas/public_html/proyecto/asignacion/vehiculos/ajax_data.php on line 185
+[12-Jun-2014 13:48:40 UTC] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/signsas/public_html/proyecto/asignacion/vehiculos/ajax_data.php on line 185
+[12-Jun-2014 13:48:40 UTC] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/signsas/public_html/proyecto/asignacion/vehiculos/ajax_data.php on line 185
+[17-Jun-2014 10:47:01 America/Chicago] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home3/signsas/public_html/proyecto/asignacion/vehiculos/ajax_data.php on line 185
+[18-Jun-2014 09:24:52 America/Chicago] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home3/signsas/public_html/proyecto/asignacion/vehiculos/ajax_data.php on line 185
+[18-Jun-2014 12:11:13 America/Chicago] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home3/signsas/public_html/proyecto/asignacion/vehiculos/ajax_data.php on line 185
+[18-Jun-2014 12:12:16 America/Chicago] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home3/signsas/public_html/proyecto/asignacion/vehiculos/ajax_data.php on line 185
+[18-Jun-2014 12:12:20 America/Chicago] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home3/signsas/public_html/proyecto/asignacion/vehiculos/ajax_data.php on line 185
+[18-Jun-2014 15:06:42 America/Chicago] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home3/signsas/public_html/proyecto/asignacion/vehiculos/ajax_data.php on line 185
+[18-Jun-2014 15:06:49 America/Chicago] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home3/signsas/public_html/proyecto/asignacion/vehiculos/ajax_data.php on line 185
+[18-Jun-2014 15:06:55 America/Chicago] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home3/signsas/public_html/proyecto/asignacion/vehiculos/ajax_data.php on line 185
+[18-Jun-2014 15:07:04 America/Chicago] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home3/signsas/public_html/proyecto/asignacion/vehiculos/ajax_data.php on line 185
+[18-Jun-2014 15:11:19 America/Chicago] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home3/signsas/public_html/proyecto/asignacion/vehiculos/ajax_data.php on line 185
+[18-Jun-2014 15:31:56 America/Chicago] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home3/signsas/public_html/proyecto/asignacion/vehiculos/ajax_data.php on line 185
+[18-Jun-2014 16:01:09 America/Chicago] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home3/signsas/public_html/proyecto/asignacion/vehiculos/ajax_data.php on line 185
+[20-Jun-2014 10:27:16 America/Chicago] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home3/signsas/public_html/proyecto/asignacion/vehiculos/ajax_data.php on line 185
+[20-Jun-2014 12:25:26 America/Chicago] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home3/signsas/public_html/proyecto/asignacion/vehiculos/ajax_data.php on line 185
+[20-Jun-2014 12:25:36 America/Chicago] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home3/signsas/public_html/proyecto/asignacion/vehiculos/ajax_data.php on line 185
+[20-Jun-2014 13:02:16 America/Chicago] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home3/signsas/public_html/proyecto/asignacion/vehiculos/ajax_data.php on line 185
+[20-Jun-2014 13:02:31 America/Chicago] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home3/signsas/public_html/proyecto/asignacion/vehiculos/ajax_data.php on line 185
+[20-Jun-2014 14:08:38 America/Chicago] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home3/signsas/public_html/proyecto/asignacion/vehiculos/ajax_data.php on line 185
+[24-Jun-2014 10:12:15 America/Chicago] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home3/signsas/public_html/proyecto/asignacion/vehiculos/ajax_data.php on line 185
+[24-Jun-2014 10:14:06 America/Chicago] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home3/signsas/public_html/proyecto/asignacion/vehiculos/ajax_data.php on line 185
+[24-Jun-2014 10:40:50 America/Chicago] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home3/signsas/public_html/proyecto/asignacion/vehiculos/ajax_data.php on line 185
+[24-Jun-2014 10:43:26 America/Chicago] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home3/signsas/public_html/proyecto/asignacion/vehiculos/ajax_data.php on line 185
+[24-Jun-2014 12:16:08 America/Chicago] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home3/signsas/public_html/proyecto/asignacion/vehiculos/ajax_data.php on line 185
+[24-Jun-2014 12:27:01 America/Chicago] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home3/signsas/public_html/proyecto/asignacion/vehiculos/ajax_data.php on line 185
+[25-Jun-2014 12:19:52 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home3/signsas/public_html/proyecto/asignacion/vehiculos/ajax_eliminar.php on line 11
+[25-Jun-2014 12:20:16 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home3/signsas/public_html/proyecto/asignacion/vehiculos/ajax_eliminar.php on line 11
+[25-Jun-2014 12:21:06 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home3/signsas/public_html/proyecto/asignacion/vehiculos/ajax_eliminar.php on line 11
+[25-Jun-2014 12:21:15 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home3/signsas/public_html/proyecto/asignacion/vehiculos/ajax_eliminar.php on line 11
+[25-Jun-2014 12:28:13 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home3/signsas/public_html/proyecto/asignacion/vehiculos/ajax_eliminar.php on line 11
+[25-Jun-2014 12:28:19 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home3/signsas/public_html/proyecto/asignacion/vehiculos/ajax_eliminar.php on line 11
+[25-Jun-2014 12:28:25 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home3/signsas/public_html/proyecto/asignacion/vehiculos/ajax_eliminar.php on line 11
+[26-Jun-2014 16:23:38 America/Chicago] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home3/signsas/public_html/proyecto/asignacion/vehiculos/ajax_form_modificar.php on line 152
+[27-Jun-2014 16:01:41 America/Chicago] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home3/signsas/public_html/proyecto/asignacion/vehiculos/ajax_form_modificar.php on line 152

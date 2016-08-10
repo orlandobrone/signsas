@@ -1,0 +1,36 @@
+[09-Jun-2014 15:02:43 UTC] PHP Warning:  json_encode(): Invalid UTF-8 sequence in argument in /home/signsas/public_html/proyecto/anticipos/beneficiario/ajax_data.php on line 192
+[11-Jun-2014 15:28:35 UTC] PHP Warning:  json_encode(): Invalid UTF-8 sequence in argument in /home/signsas/public_html/proyecto/anticipos/beneficiario/ajax_data.php on line 192
+[11-Jun-2014 15:36:30 UTC] PHP Warning:  json_encode(): Invalid UTF-8 sequence in argument in /home/signsas/public_html/proyecto/anticipos/beneficiario/ajax_data.php on line 192
+[11-Jun-2014 20:10:20 UTC] PHP Warning:  json_encode(): Invalid UTF-8 sequence in argument in /home/signsas/public_html/proyecto/anticipos/beneficiario/ajax_data.php on line 192
+[11-Jun-2014 20:11:13 UTC] PHP Warning:  json_encode(): Invalid UTF-8 sequence in argument in /home/signsas/public_html/proyecto/anticipos/beneficiario/ajax_data.php on line 192
+[11-Jun-2014 20:24:06 UTC] PHP Warning:  json_encode(): Invalid UTF-8 sequence in argument in /home/signsas/public_html/proyecto/anticipos/beneficiario/ajax_data.php on line 192
+[11-Jun-2014 20:32:32 UTC] PHP Warning:  json_encode(): Invalid UTF-8 sequence in argument in /home/signsas/public_html/proyecto/anticipos/beneficiario/ajax_data.php on line 192
+[11-Jun-2014 20:33:05 UTC] PHP Warning:  json_encode(): Invalid UTF-8 sequence in argument in /home/signsas/public_html/proyecto/anticipos/beneficiario/ajax_data.php on line 192
+[11-Jun-2014 20:33:06 UTC] PHP Warning:  json_encode(): Invalid UTF-8 sequence in argument in /home/signsas/public_html/proyecto/anticipos/beneficiario/ajax_data.php on line 192
+[11-Jun-2014 22:02:01 UTC] PHP Warning:  json_encode(): Invalid UTF-8 sequence in argument in /home/signsas/public_html/proyecto/anticipos/beneficiario/ajax_data.php on line 192
+[11-Jun-2014 22:41:01 UTC] PHP Warning:  json_encode(): Invalid UTF-8 sequence in argument in /home/signsas/public_html/proyecto/anticipos/beneficiario/ajax_data.php on line 192
+[11-Jun-2014 22:42:26 UTC] PHP Warning:  json_encode(): Invalid UTF-8 sequence in argument in /home/signsas/public_html/proyecto/anticipos/beneficiario/ajax_data.php on line 192
+[11-Jun-2014 22:42:39 UTC] PHP Warning:  json_encode(): Invalid UTF-8 sequence in argument in /home/signsas/public_html/proyecto/anticipos/beneficiario/ajax_data.php on line 192
+[11-Jun-2014 22:43:56 UTC] PHP Warning:  json_encode(): Invalid UTF-8 sequence in argument in /home/signsas/public_html/proyecto/anticipos/beneficiario/ajax_data.php on line 192
+[11-Jun-2014 23:05:46 UTC] PHP Warning:  json_encode(): Invalid UTF-8 sequence in argument in /home/signsas/public_html/proyecto/anticipos/beneficiario/ajax_data.php on line 192
+[11-Jun-2014 23:11:21 UTC] PHP Warning:  json_encode(): Invalid UTF-8 sequence in argument in /home/signsas/public_html/proyecto/anticipos/beneficiario/ajax_data.php on line 192
+[12-Jun-2014 13:17:43 UTC] PHP Warning:  json_encode(): Invalid UTF-8 sequence in argument in /home/signsas/public_html/proyecto/anticipos/beneficiario/ajax_data.php on line 192
+[12-Jun-2014 13:18:15 UTC] PHP Warning:  json_encode(): Invalid UTF-8 sequence in argument in /home/signsas/public_html/proyecto/anticipos/beneficiario/ajax_data.php on line 192
+[12-Jun-2014 13:20:44 UTC] PHP Warning:  json_encode(): Invalid UTF-8 sequence in argument in /home/signsas/public_html/proyecto/anticipos/beneficiario/ajax_data.php on line 192
+[12-Jun-2014 20:22:42 UTC] PHP Warning:  json_encode(): Invalid UTF-8 sequence in argument in /home/signsas/public_html/proyecto/anticipos/beneficiario/ajax_data.php on line 192
+[12-Jun-2014 20:30:11 UTC] PHP Warning:  json_encode(): Invalid UTF-8 sequence in argument in /home/signsas/public_html/proyecto/anticipos/beneficiario/ajax_data.php on line 192
+[09-Jul-2014 10:06:44 America/Bogota] PHP Warning:  mysql_connect(): User 'signsas_project' has exceeded the 'max_connections_per_hour' resource (current value: 1) in /home3/signsas/public_html/proyecto/conexion.php on line 10
+[09-Jul-2014 10:06:56 America/Bogota] PHP Warning:  mysql_connect(): User 'signsas_project' has exceeded the 'max_connections_per_hour' resource (current value: 1) in /home3/signsas/public_html/proyecto/conexion.php on line 10
+[09-Jul-2014 10:06:58 America/Bogota] PHP Warning:  mysql_connect(): User 'signsas_project' has exceeded the 'max_connections_per_hour' resource (current value: 1) in /home3/signsas/public_html/proyecto/conexion.php on line 10
+[09-Jul-2014 10:07:00 America/Bogota] PHP Warning:  mysql_connect(): User 'signsas_project' has exceeded the 'max_connections_per_hour' resource (current value: 1) in /home3/signsas/public_html/proyecto/conexion.php on line 10
+[09-Jul-2014 10:07:04 America/Bogota] PHP Warning:  mysql_connect(): User 'signsas_project' has exceeded the 'max_connections_per_hour' resource (current value: 1) in /home3/signsas/public_html/proyecto/conexion.php on line 10
+[09-Jul-2014 10:07:07 America/Bogota] PHP Warning:  mysql_connect(): User 'signsas_project' has exceeded the 'max_connections_per_hour' resource (current value: 1) in /home3/signsas/public_html/proyecto/conexion.php on line 10
+[09-Jul-2014 10:07:17 America/Bogota] PHP Warning:  mysql_connect(): User 'signsas_project' has exceeded the 'max_connections_per_hour' resource (current value: 1) in /home3/signsas/public_html/proyecto/conexion.php on line 10
+[09-Jul-2014 10:07:19 America/Bogota] PHP Warning:  mysql_connect(): User 'signsas_project' has exceeded the 'max_connections_per_hour' resource (current value: 1) in /home3/signsas/public_html/proyecto/conexion.php on line 10
+[09-Jul-2014 10:07:23 America/Bogota] PHP Warning:  mysql_connect(): User 'signsas_project' has exceeded the 'max_connections_per_hour' resource (current value: 1) in /home3/signsas/public_html/proyecto/conexion.php on line 10
+[09-Jul-2014 10:07:25 America/Bogota] PHP Warning:  mysql_connect(): User 'signsas_project' has exceeded the 'max_connections_per_hour' resource (current value: 1) in /home3/signsas/public_html/proyecto/conexion.php on line 10
+[09-Jul-2014 10:07:27 America/Bogota] PHP Warning:  mysql_connect(): User 'signsas_project' has exceeded the 'max_connections_per_hour' resource (current value: 1) in /home3/signsas/public_html/proyecto/conexion.php on line 10
+[09-Jul-2014 10:07:28 America/Bogota] PHP Warning:  mysql_connect(): User 'signsas_project' has exceeded the 'max_connections_per_hour' resource (current value: 1) in /home3/signsas/public_html/proyecto/conexion.php on line 10
+[09-Jul-2014 10:07:33 America/Bogota] PHP Warning:  mysql_connect(): User 'signsas_project' has exceeded the 'max_connections_per_hour' resource (current value: 1) in /home3/signsas/public_html/proyecto/conexion.php on line 10
+[09-Jul-2014 10:07:51 America/Bogota] PHP Warning:  mysql_connect(): User 'signsas_project' has exceeded the 'max_connections_per_hour' resource (current value: 1) in /home3/signsas/public_html/proyecto/conexion.php on line 10
+[09-Jul-2014 10:09:14 America/Bogota] PHP Warning:  mysql_connect(): User 'signsas_project' has exceeded the 'max_connections_per_hour' resource (current value: 1) in /home3/signsas/public_html/proyecto/conexion.php on line 10

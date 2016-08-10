@@ -1,0 +1,400 @@
+<!doctype html>
+<html>
+    <head>
+		
+	<title>jQuery jLocator Plugin - Usage</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<!-- font awesome -->
+		<link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet" />
+		
+		<!-- css -->
+        <link rel="stylesheet" href="../html/css/vendor/normalize.css" />
+		<link rel="stylesheet" href="../html/css/styles.min.css" />
+        <link href="../html/img/common/favicon.png" rel="shortcut icon" />
+		<!--[if lt IE 8]>
+		<link rel="stylesheet" href="../html/css/styles.ie7.css" />
+		<![endif]-->
+		
+		<link rel="stylesheet" href="css/vendor/github.min.css" />		
+		
+		<!-- js -->		
+        <script src="../html/js/vendor/jquery-1.10.0.min.js"></script>	
+		<!--script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.2.js"></script-->
+		<script src="../html/js/vendor/modernizr.min.js"></script>
+		
+	<!--[if gt IE 8]> -->
+	<script src="js/vendor/highlight.min.js"></script>		
+	<script>
+		hljs.tabReplace = '&nbsp;&nbsp;&nbsp;';
+		hljs.initHighlightingOnLoad();
+	</script>
+	<!-- <![endif]-->
+		
+		<!-- google analytics -->
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-36006444-4', 'no81no.com');
+		  ga('send', 'pageview');
+
+		</script>
+    </head>
+    <body>
+	
+		<!-- black top bar -->
+		<div class="box" id="black-top-bar">
+			<div class="center">			
+                <div class="box">
+					<ul class="hmenu right" id="social-menu">
+						<li>
+							<a href="https://www.facebook.com/miriam.zusin" title=""><i class="icon-facebook"></i></a>
+						</li>
+						<li>
+							<a href="https://plus.google.com/105939222257494574786/posts" title=""><i class="icon-google-plus"></i></a>
+						</li>						
+						<li>
+							<a href="https://github.com/no81no" title=""><i class="icon-github"></i></a>
+						</li>
+						<li>
+							<a href="http://www.linkedin.com/pub/miriam-zusin/2b/65b/933" title=""><i class="icon-linkedin"></i></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+				
+		<!-- header -->
+		<header class="box" id="header">
+			<div class="box" id="header-box">
+				<div class="center">			
+					<div class="box">
+
+						<!-- logo -->
+						<div id="logo" class="left">							
+							<a href="http://no81no.com" title="">
+								<img src="../html/img/common/logo.png" alt="" title="" class="align-middle" />
+							</a>
+						</div>	
+						
+						<!-- main navigation -->
+						<ul class="default-menu hmenu right" id="top-menu">						
+							<li><a title="" href="http://no81no.com"><i class="icon-reply-all"></i> All Projects</a></li>
+							<li><a title="" href="http://codecanyon.net/user/no81no/portfolio"><i class="icon-asterisk"></i> CodeCanyon</a></li>
+							<li><a title="" href="mailto:no81no@gmail.com"><i class="icon-envelope"></i> Contacts</a></li>	
+							<li><a title="" href="mailto:no81no@gmail.com" class="orange"><i class="icon-coffee"></i> Freelance</a></li>	
+						</ul>
+
+					</div>
+				</div>					
+			</div>
+		</header>
+		
+		<!-- bread crumbs-->
+		<div id="bread-crumbs-box" class="box">
+			<div id="bread-crumbs" class="box">
+			
+				<div class="center">
+					<div class="box text-shadow">
+						<p>
+							<a href="http://no81no.com" title="">All Projects</a> &raquo; jQuery jLocator Plugin
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- main content -->
+		<div id="main-content" class="box">
+			<div class="center">
+				<div id="page-content" class="box">
+
+					<!-- tabs navigation -->
+					<ul class="default-menu hmenu left box">	
+							
+						<li>
+							<a title="" href="../start-here.html"><i class="icon-home"></i> Overview</a>
+						</li>
+							
+						<li>
+							<a title="" href="../html/demo.html"><i class="icon-picture"></i> Demo</a>
+						</li>
+							
+						<li class="active">
+							<a title="" href="../html/usage.html"><i class="icon-wrench"></i> Usage</a>
+						</li>
+							
+						<li>
+							<a title="" href="../html/js-settings.html"><i class="icon-cog"></i> JS Settings</a>
+						</li>
+							
+						<li>
+							<a title="" href="../html/html-settings.html"><i class="icon-code"></i> HTML Settings</a>
+						</li>
+							
+						<li>
+							<a title="" href="../html/source-code.html"><i class="icon-list-ol"></i> Source Code</a>
+						</li>
+							
+						<li>
+							<a title="" href="../html/api.html"><i class="icon-book"></i> API</a>
+						</li>
+							<li>
+								<a title="" href="http://codecanyon.net/item/jquery-store-locator/3272278" class="orange"><i class="icon-shopping-cart"></i> Buy</a>
+							</li>
+					</ul>
+	
+					
+			
+						
+					<div class="box text-shadow">
+						<h1 class="h1-30-normal left">Usage</h1>
+					</div>
+					
+					<!-- title -->	
+					<div class="box">
+						<p class="text-shadow reset-pm">
+							The latest jLocator files:
+						</p>
+					</div>
+					
+					<div class="box text-shadow">
+						<ul class="arrows-menu">
+							<li>JS files can be found in the '/minified' folder in jLocator archive.</li>
+							<li>CSS files can be found in the '/html/css' folder in jLocator archive.</li>
+						</ul>
+					</div>
+					
+					<!-- title -->	
+					<div class="box">
+						<p class="text-shadow reset-pm">
+							Add the following HTML to the HEAD section of your page:
+						</p>
+					</div>	
+
+					<!-- code -->	
+					<div class="box">
+					<pre>
+						<code class="xml">
+&lt;!-- css -->						
+&lt;link href="css/jplist.css" rel="stylesheet" type="text/css" />
+&lt;link href="css/jlocator.css" rel="stylesheet" type="text/css" />
+
+&lt;!-- jlocator is based on jplist plugin: http://jplist.no81no.com -->
+&lt;script src="js/jplist.min.js">&lt;/script>	
+
+&lt;!-- jlocator -->		
+&lt;script src="http://maps.google.com/maps/api/js?sensor=false&amp;libraries=places,geometry">&lt;/script>
+&lt;script src="js/jlocator.min.js">&lt;/script>
+
+&lt;!-- for IE 7: json support and ie 7 style -->
+&lt;!--[if lt IE 8]>
+&lt;script src="js/json2.min.js">&lt;/script>
+&lt;![endif]-->
+						</code>	
+					</pre>	
+					</div>
+
+					<!-- title -->
+					<div class="box">
+						<p class="text-shadow reset-pm">
+							Add plugin call to the HEAD section of your page:
+						</p>
+					</div>
+
+					<!-- code -->
+					<div class="box">
+					<pre>
+						<code class="xml">
+&lt;script type='text/javascript'&gt;	
+	$('document').ready(function(){				
+		$('#jlocator').jlocator();
+	});
+&lt;/script&gt;
+						</code>	
+					</pre>	
+					</div>
+
+					<!-- title -->
+					<div class="box">
+						<p class="text-shadow reset-pm">
+							Add the following HTML to the BODY section of your page:
+						</p>
+					</div>
+
+					<!-- code -->
+					<div class="box">
+					<pre>
+						<code class="xml">
+						
+&lt;!-- STORE LOCATOR DEMO -->
+&lt;div id="jlocator">
+
+	&lt;!-- panel -->
+	&lt;div class="panel" data-type="panel">
+	
+		&lt;!-- controls -->
+		&lt;div class="controls" data-type="controls">
+		
+			&lt;div class="box">
+				&lt;div 
+					class="drop-down left" 
+					data-control-type="drop-down" 
+					data-control-name="sort" 
+					data-control-action="sort"
+					data-datetime-format="{month}/{day}/{year}"> &lt;!-- {year}, {month}, {day}, {hour}, {min}, {sec} -->
+					
+					&lt;ul>
+						&lt;li>&lt;span data-path="default">Sort by&lt;/span>&lt;/li>
+						&lt;li>&lt;span data-path=".title" data-order="asc" data-type="text">Title A-Z&lt;/span>&lt;/li>
+						&lt;li>&lt;span data-path=".title" data-order="desc" data-type="text">Title Z-A&lt;/span>&lt;/li>
+					&lt;/ul>
+				&lt;/div>
+				
+				&lt;input 
+					class="autocomplete left"
+					data-control-type="autocomplete" 
+					data-control-name="autocomplete" 
+					data-control-action="filter"
+					data-radius="100000" 
+					type="text"
+					placeholder="Enter a location"
+				/>&lt;!-- data-radius in meters -->
+			&lt;/div>
+			
+			&lt;div class="box">
+			
+				&lt;!-- checkbox filters -->
+				&lt;div 
+					class="cb-group-filter left"
+					data-control-type="checkbox-group-filter"
+					data-control-action="filter"
+					data-control-name="themes-art">
+					
+					&lt;div class="cb">
+						&lt;input 			
+							data-path=".art" 									
+							id="art" 
+							type="checkbox" 									
+						/>
+						&lt;label for="art">Art&lt;/label>
+					&lt;/div>										
+				&lt;/div>
+				
+				&lt;!-- checkbox filters -->
+				&lt;div 
+					class="cb-group-filter left"
+					data-control-type="checkbox-group-filter"
+					data-control-action="filter"
+					data-control-name="themes-history">
+					
+					&lt;div class="cb">
+						&lt;input 
+							data-path=".history"									
+							id="history" 
+							type="checkbox" />
+						&lt;label for="history">History&lt;/label>
+					&lt;/div>									
+				&lt;/div>
+				
+			&lt;/div>
+			
+			&lt;div class="box">
+			
+				&lt;!-- paging -->
+				&lt;div 
+					class="paging-results left" 
+					data-type="Page {current} of {pages}" 
+					data-control-type="label" 
+					data-control-name="paging" 
+					data-control-action="paging">&lt;/div>
+					
+				&lt;div 
+					class="paging left" 
+					data-control-type="placeholder" 
+					data-control-name="paging" 
+					data-control-action="paging"
+					data-items-per-page="5">&lt;/div>
+				&lt;/div>
+		&lt;/div>
+		
+		&lt;!-- store list -->
+		&lt;div class="stores box" data-type="stores">
+			
+			&lt;!-- store -->
+			&lt;div 
+				data-type="store" 
+				class="store box"
+				data-latitude="39.8252813" 
+				data-longitude="-86.1857915">
+				&lt;p class="art">
+					&lt;span class="title" data-type="title">Indianapolis Museum of Art&lt;/span>,&lt;br>
+					&lt;span data-type="address">4000 Michigan Road&lt;/span>,&lt;br>
+					&lt;span data-type="city">Indianapolis&lt;/span>,&lt;br>
+					&lt;span data-type="state">Indiana&lt;/span>,&lt;br>
+					&lt;!--span data-type="zipcode">&lt;/span>&lt;br/-->
+					&lt;span data-type="country">United States&lt;/span>&lt;br/>
+					&lt;span class="tags">Tags: Art&lt;/span>
+				&lt;/p>
+			&lt;/div>
+			
+			&lt;!-- store -->
+			&lt;div 
+				data-type="store" 
+				class="store box"
+				data-latitude="40.7609666" 
+				data-longitude="-73.97723259999998">
+				&lt;p class="art">
+					&lt;span class="title" data-type="title">The Museum of Modern Art&lt;/span>,&lt;br>
+					&lt;span data-type="address">11 West 53 Street&lt;/span>,&lt;br>
+					&lt;span data-type="city">New York&lt;/span>,&lt;br>
+					&lt;span data-type="state">NY&lt;/span> 
+					&lt;span data-type="zipcode">10019&lt;/span>,&lt;br>
+					&lt;span data-type="country">United States&lt;/span>&lt;br/>
+					&lt;span class="tags">Tags: Art&lt;/span>
+				&lt;/p>
+			&lt;/div>
+			
+			...
+			
+		&lt;/div>
+		
+		&lt;!-- no results -->
+		&lt;div class="box no-results" data-type="no-results">
+			&lt;p>No results found&lt;/p>
+		&lt;/div>
+		
+	&lt;/div>
+	
+	&lt;!-- map -->
+	&lt;div class="map" data-type="map">&lt;/div>
+	
+&lt;/div>
+&lt;!-- end of STORE LOCATOR DEMO -->
+							
+						</code>	
+					</pre>	
+					</div>	
+					<!-- end of usage -->
+				</div>
+			</div>
+		</div>	
+		
+		<!-- footer -->
+		<footer class="box" id="footer">
+			<div class="center">			
+                <div class="box">
+				
+					<p class="align-center" id="footer-content">
+						Copyright &copy;  2013 <a href="mailto:no81no@gmail.com" title="">Miriam Zusin.</a>
+					</p>
+					
+				</div>
+			</div>
+		</footer>	
+    </body>
+</html>

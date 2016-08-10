@@ -1,0 +1,16 @@
+#artcombo .tabs a{float:left;height:35px;text-decoration:none;text-shadow:none;display:block;font-size:11px;line-height:35px;font-weight:700;text-transform:uppercase;padding:0 30px}
+#artcombo .tabs li:first-child{border:none}
+#artcombo .tabs li{border-left:1px solid rgba(255,255,255,0.8)}
+#artcombo .tabs a:hover{}
+#artcombo .tabs #current a{}
+#artcombo .tab-content{box-shadow: 1px 1px 0 rgba(0,0,0,0.1);min-height:50px;padding:20px}
+#artcombo .tabs li.comtab a{text-indent:-9999px;display:block}
+#artcombo .tabs li.comtab,#artcombo .tabs li.comtab a{background-image:url(images/comment2.png);background-repeat:no-repeat;background-position:center center}
+#artcombo li.popular-data{border-bottom:1px solid rgba(255,255,255,0.8);padding-top:5px;padding-bottom:5px}
+#artcombo li.popular-data span{display:block;font-size:11px}
+#artcombo li.popular-data:last-child{border:0;padding-bottom:0}
+#artcombo li.popular-data img{margin-right:10px;background-color: rgba(255,255,255,0.8);box-shadow: 1px 1px 0 rgba(0,0,0,0.1);padding:5px}
+#artcombo li.popular-data img:hover{background-color:rgba(0,0,0,0.2)}
+#artcombo li.archive-data{border-bottom:1px solid rgba(255,255,255,0.8);padding-top:5px;padding-bottom:5px;background-image:url(images/bullet.png);background-repeat:no-repeat;background-position:left center;padding-left:15px}
+#artcombo li.comment-data{border-bottom:1px solid rgba(255,255,255,0.8);padding-top:5px;padding-bottom:5px;background-image:url(images/bullet.png);background-repeat:no-repeat;background-position:left 9px;padding-left:15px}
+#artcombo li.archive-data small,#artcombo li.comment-data small{float:right}

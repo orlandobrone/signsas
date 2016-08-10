@@ -1,0 +1,95 @@
+/* == Cart Content == */
+#cart-content,#layout-switch{height:35px;line-height:35px;background-color: rgba(255,255,255,0.8);box-shadow: 1px 1px 0 rgba(0,0,0,0.1);padding-left:45px;padding-right:15px;margin-top:2px}
+#cart-content{background-image:url(images/basket.png);background-repeat:no-repeat;background-position:10px center}
+#layout-switch{margin-left:10px;padding:0}
+#layout-switch a{width:35px;height:35px;display:block;float:left;text-indent:-9999px}
+#layout-switch a.list-icon,#layout-switch a.grid-icon{background-image:url(images/layout-bg.png);background-repeat:no-repeat;background-position:0 0}
+#layout-switch a.list-icon:hover,#layout-switch a.grid-icon:hover{background-color:#eee}
+#layout-switch a.grid-icon{background-position:right 0}
+#layout-switch a.grid-icon.current{background-position:right -35px}
+#layout-switch a.list-icon.current{background-position:0 -35px}
+a#rem-from-cart{background-color:#BA433F;text-indent:-9999px;background-image:url(images/remove.png);background-repeat:no-repeat;height:35px;width:35px;display:block;float:right;background-position:center center;margin-right:-15px;margin-left:15px;border-left-width:1px;border-left-style:solid;border-left-color:rgba(255,255,255,0.5)}
+
+/* == Item View == */
+#single-item .box{box-shadow:none;padding:0;background-color:transparent}
+#single-item figure{background-color: rgba(255,255,255,0.8);box-shadow: 1px 1px 0 rgba(0,0,0,0.1);line-height: 1px; padding: 7px; text-align: center; display: block; margin-right: auto; margin-left: auto; }
+#single-item figure img{ text-align: center; display: block; margin-right: auto; margin-left: auto; }
+#single-item div.shop-data span.price{background-color: rgba(255,255,255,0.8);box-shadow: 1px 1px 0 rgba(0,0,0,0.1);height: 36px; display: block; text-align: center; line-height: 36px;margin-bottom:1px;margin-top:1px }
+#single-item div.shop-data a.mem-ok,#single-item div.shop-data a.add-to-cart,#single-item div.shop-data a.mem-req,#single-item div.shop-data a.download{background-color: rgba(255,255,255,0.8);box-shadow: 1px 1px 0 rgba(0,0,0,0.1);line-height:36px;display:block;height:36px;background-image:url(images/mem-ok.png);background-repeat:no-repeat;background-position:15px center;padding-left:45px;padding-right:15px;margin-bottom:10px}
+#single-item div.shop-data a.add-to-cart{background-image:url(images/addtocart.png)}
+#single-item div.shop-data a.mem-req{background-image:url(images/mem-req.png)}
+#single-item div.shop-data a.download{background-image:url(images/download.png)}
+
+/* == List View == */
+#digishop figure img{ text-align: center; display: block; margin-right: auto; margin-left: auto; }
+#digishop ul.list-view li div.shop-inner{position:relative;background-color: rgba(255,255,255,0.8);box-shadow: 1px 1px 0 rgba(0,0,0,0.1);padding:15px}
+#digishop ul.list-view li h3{margin-top:10px}
+#digishop ul.list-view li h3 span{ float: right; font-size: 14px; }
+#digishop ul.list-view li div.shop-data{background-color: rgba(255,255,255,0.8);box-shadow: 1px 1px 0 rgba(0,0,0,0.1);height:36px;line-height:36px;margin-bottom:15px}
+#digishop ul.list-view li div.shop-data.last-item{margin-bottom:0}
+#digishop ul.list-view li span.goto{display:block;width:50px;height:36px;float:right;border-left-width:1px;border-left-style:solid;border-left-color:rgba(0,0,0,0.1);text-align:center}
+#digishop ul.list-view li span.goto a{display:block;width:50px;height:36px;background-image:url(images/next.png);background-repeat:no-repeat;background-position:center top;text-indent:-9999px}
+#digishop ul.list-view li span.goto a:hover{background-position:center -36px}
+#digishop ul.list-view li span.shop-toolbar{margin-left:10px;display:block;float:left;height:36px}
+#digishop ul.list-view li span.shop-toolbar a.add-to-cart,#digishop ul.list-view li span.shop-toolbar a.download,#digishop ul.list-view li span.shop-toolbar a.mem-ok,#digishop ul.list-view li span.shop-toolbar a.mem-req{display:block;height:36px;background-image:url(images/addtocart.png);background-repeat:no-repeat;background-position:left center;padding-left:30px}
+#digishop ul.list-view li span.shop-toolbar a.download{background-image:url(images/download.png)}
+#digishop ul.list-view li span.shop-toolbar a.mem-req{background-image:url(images/mem-req.png)}
+#digishop ul.list-view li span.shop-toolbar a.mem-ok{background-image:url(images/mem-ok.png)}
+
+/* == Grid View == */
+#digishop ul.grid-view li{max-width:25%;float:left} /*change width to 33.33% if using sidebar widgets */
+#digishop ul.grid-view li img.dimage{display:block;max-width:100%}
+#digishop ul.grid-view li div.shop-inner{background-color: rgba(255,255,255,0.8);box-shadow: 1px 1px 0 rgba(0,0,0,0.1);position:relative;text-align:center;margin:15px 15px 0;padding:15px}
+#digishop ul.grid-view li div.shop-inner:hover{background-color:rgba(255,255,255,0.1)}
+#digishop ul.grid-view li h4{margin:10px 0 0}
+#digishop ul.grid-view li div.shop-data{background-color: rgba(255,255,255,0.8);box-shadow: 1px 1px 0 rgba(0,0,0,0.1);height:36px;line-height:36px;margin:1px 15px 15px}
+#digishop ul.grid-view li span.goto{display:block;width:50px;height:36px;float:right;border-left-width:1px;border-left-style:solid;border-left-color:rgba(255,255,255,0.2);text-align:center}
+#digishop ul.grid-view li span.goto a{display:block;width:50px;height:36px;background-image:url(images/next.png);background-repeat:no-repeat;background-position:center top;text-indent:-9999px}
+#digishop ul.grid-view li span.goto a:hover{background-position:center -36px}
+#digishop ul.grid-view li span.shop-toolbar{margin-left:10px;display:block;float:left;height:36px}
+#digishop ul.grid-view li span.shop-toolbar a.add-to-cart,#digishop ul.grid-view li span.shop-toolbar a.download,#digishop ul.grid-view li span.shop-toolbar a.mem-ok,#digishop ul.grid-view li span.shop-toolbar a.mem-req{display:block;height:36px;background-image:url(images/addtocart.png);background-repeat:no-repeat;background-position:left center;padding-left:30px}
+#digishop ul.grid-view li span.shop-toolbar a.download{background-image:url(images/download.png)}
+#digishop ul.grid-view li span.shop-toolbar a.mem-req{background-image:url(images/mem-req.png)}
+#digishop ul.grid-view li span.shop-toolbar a.mem-ok{background-image:url(images/mem-ok.png)}
+
+#checkout .datatable .butgreen{background-color:#eee}
+
+#gallerywrap{margin-top:25px;padding:25px;background-color: rgba(255,255,255,0.8);box-shadow: 1px 1px 0 rgba(0,0,0,0.1)}
+#gallerywrap .flexslider {position: relative; zoom: 1;overflow:hidden;}
+#gallerywrap .flex-viewport {max-height: 2000px; -webkit-transition: all 1s ease; -moz-transition: all 1s ease; transition: all 1s ease;}
+#gallerywrap .loading .flex-viewport {max-height: 300px;}
+#gallerywrap .flexslider .slides {zoom: 1;}
+
+#gallerywrap .flex-direction-nav a {width: 32px; height: 32px; margin: -30px 0 0; display: block; background: url(images/navigation.png) no-repeat 0 0; position: absolute; top: 50%; cursor: pointer; text-indent: -9999px; opacity: 0; -webkit-transition: all .3s ease;}
+#gallerywrap .flex-direction-nav .flex-next {background-position: 100% 0; right: -32px; }
+#gallerywrap .flex-direction-nav .flex-prev {left: -32px;}
+#gallerywrap .flexslider:hover .flex-next {opacity: 0.8; right: 10px;}
+#gallerywrap .flexslider:hover .flex-prev {opacity: 0.8; left: 10px;}
+#gallerywrap .flexslider:hover .flex-next:hover, .flexslider:hover .flex-prev:hover {opacity: 1;}
+#gallerywrap .flex-direction-nav .disabled {opacity: .3!important; filter:alpha(opacity=30); cursor: default;}
+
+#galleryslider {margin: 0 0 10px!important;}
+#galcarousel li {margin-right: 10px;}
+#galcarousel img {display: block; opacity: .5; cursor: pointer;}
+#galcarousel img:hover {opacity: 1;}
+#galcarousel .flex-active-slide img {opacity: 1; cursor: default;}
+
+
+/* == Error Messages == */
+p.msg{text-align:center;color:#FFF;margin:0;padding:5px}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  #digishop ul.grid-view li {max-width:33.333%;}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  #digishop ul.grid-view li {max-width:50%;}
+}
+@media only screen and (max-width: 480px) {
+  #digishop ul.grid-view li { max-width: 100% }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  #digishop ul.grid-view li { max-width: 50%; }
+}

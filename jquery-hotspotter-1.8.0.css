@@ -1,0 +1,167 @@
+/*!
+ * Title                   : Hotspotter - styles
+ * Author                  : Basm , aka z-B
+ * Version                 : 1.8.0
+ * Last Modified           : 7 Nov 2013
+ * CodeCanyon Profile      : http://codecanyon.net/user/z-B
+ * License                 : http://codecanyon.net/licenses/regular_extended
+ */
+.hs-area {
+    position: relative;
+}
+
+.hs-wrap , .tt-wrap {
+    position: absolute;
+    display: none;
+}
+
+.tt-wrap {
+    border: 10px solid transparent;
+    z-index: 1000;
+}
+
+.tt-wrap.left {
+    top: -2px;
+    right: 100%;
+}
+
+.tt-wrap.right {
+    top: -2px;
+    left: 100%;
+}
+
+.tt-wrap.top {
+    bottom: 100%;
+    left:-2px;
+}
+
+.tt-wrap.bottom {
+    top: 100%;
+    left:-2px;
+}
+
+/*======================= Spots =======================*/
+.invisible-spot , .red-spot  , .onhover-spot {}
+.red-spot {
+}
+
+.red-spot.active {
+}
+/*----- Shadow spot -----*/
+.shadow-spot {
+}
+
+.shadow-spot.active {
+}
+/*----- Glass spot -----*/
+.glass-spot {
+}
+
+.glass-spot.active {
+}
+/*----- Sniper spot -----*/
+.sniper-spot {
+}
+.sniper-spot:before , .sniper-spot:after {
+    content: "";
+    position: absolute;
+}
+.sniper-spot:before {
+}
+.sniper-spot:after {
+}
+.sniper-spot.active:before, .sniper-spot.active:after{
+    width: 0px;
+    height: 0px;
+}
+.sniper-spot.active {
+}
+.onhover-spot {
+    border:2px solid transparent;
+}
+.onhover-spot.active {
+}
+/* Custom image & mark up spots*/
+.img-spot img , .markup-spot div:last-child{
+    display: none;
+    /* remove space below image as the image is inline element to allow aim effect to work correctly*/
+    vertical-align: bottom;
+}
+/*======================= Tooltips =======================*/
+.tip-tooltip {
+}
+
+.tip-tooltip:before {
+}
+/*------ black 'default background color' dirs------*/
+.tip-tooltip.right:before {
+    top: 10px;
+    right:100%;
+    border-color: transparent #000000 transparent transparent;
+}
+.tip-tooltip.left:before {
+    top: 10px;
+    left:100%;
+    border-color: transparent transparent transparent #000000;
+}
+.tip-tooltip.top:before {
+    top: 100%;
+    left: 12px;
+    border-color: #000000 transparent transparent transparent;
+}
+.tip-tooltip.bottom:before {
+    bottom: 100%;
+    left: 12px;
+    border-color: transparent transparent #000000 transparent;
+}
+
+/*------ white ------*/
+.tip-tooltip.white {
+    background-color: #ffffff;
+    color: #000000;
+}
+.tip-tooltip.white.right:before {
+    border-color: transparent #ffffff transparent transparent;
+}
+.tip-tooltip.white.left:before {
+    border-color: transparent transparent transparent #ffffff;
+}
+.tip-tooltip.white.top:before {
+    border-color: #ffffff transparent transparent transparent;
+}
+.tip-tooltip.white.bottom:before {
+    border-color: transparent transparent #ffffff transparent;
+}
+
+/*----------------------------------------------------------------------------*/
+/* Bubble Tooltip */
+.bubble-tooltip {
+    
+}
+.bubble-tooltip:before {
+   
+}
+.bubble-tooltip:after {
+}
+/*----------------------------------------------------------------------------*/
+/*aim handler styles*/
+.aim-tooltip {
+}
+.aim-tooltip .tt-content {
+    display: none;
+}
+.aim-tooltip.top {
+}
+.aim-tooltip.right {
+}
+.aim-tooltip.bottom {
+}
+.aim-tooltip.left {
+}
+.hs-aim-rect , .hs-aim-pillar {
+}
+.hs-aim-pillar {
+}
+.hs-flatten {
+    border-radius: 0 !important;
+}

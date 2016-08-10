@@ -1,0 +1,4 @@
+#latest-articles .image-holder{border:1px solid rgba(255,255,255,0.1);padding:5px;background-color: rgba(0,0,0,0.1);line-height:0}
+#latest-articles .toolbar{border-bottom:1px solid rgba(255,255,255,0.1);padding-top:5px;padding-bottom:5px}
+#latest-articles .toolbar a{font-weight:600;display:inline-block;margin-top:5px}
+#latest-articles .toolbar span a{font-weight:normal}
